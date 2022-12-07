@@ -1,0 +1,33 @@
+.vessels-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: #5595D1;
+    gap:2rem;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.vessel{
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    gap:1rem;
+    padding: 1rem 1rem;
+}
+
+.vessel img {
+    width: 45%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:800px) {
+    .vessel{
+        flex-direction: column;
+    }
+    .vessel img {
+        width: 100%;
+    }
+}

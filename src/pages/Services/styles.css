@@ -1,0 +1,409 @@
+.services-hero {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4)  76.14%), url('../../assets/Services/1.jpg');
+    display: flex;
+    align-items: center;
+    height: 719px;
+    background-size: cover;
+
+}
+
+
+.services-hero-content {
+    width: 45%;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.service{
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.service::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: #5595D1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.service:hover::after{
+    visibility: visible;
+    opacity: .3;
+}
+
+.order1{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)  76.14%), url('../../assets/Services/2.jpg');
+    background-size: cover;
+}
+.order2{
+    background:linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)  76.14%),url('../../assets/Services/5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.order3{
+    background:linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)  76.14%), url('../../assets/Services/3.jpg');
+    background-size: cover;
+}
+.order4{
+    background:linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)  76.14%), url('../../assets/Services/6.jpg');
+    background-size: cover;
+}
+.order5{
+    background:linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)  76.14%), url('../../assets/Services/4.jpg');
+    background-size: cover;
+}
+.order6{
+    background:linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2)  76.14%), url('../../assets/Services/7.jpg');
+    background-size: cover;
+}
+
+.ship-management{
+    height: 760px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.management-one{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+
+}
+
+.management-one ul {
+   line-height: 40px;
+}
+
+.fsm-img{
+    width: 50%;
+}
+
+
+.management-two{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+
+.management-two ul {
+    line-height: 40px;
+ }
+
+
+ /* Crew Management */
+
+ .crew-management{
+    height: 845px;
+    background-color: #5595D1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+    color: white;
+ }
+
+ .crew-management-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+    
+
+ }
+
+ .crew1-img {
+    width: 403px;
+    height: 90%;
+    object-fit: cover;
+    object-position: left;
+   
+ }
+
+.crew-li-img {
+    width: 100%;
+    height: 286px;
+    object-fit: cover;
+    
+}
+
+.crew-management-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+
+}
+
+/* tech support */
+.tech-support{
+    height: 865px;
+ 
+}
+
+.tech-support-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap:4rem
+}
+
+.tech-support-content{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.tech-support-content-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.tech1-img{
+    width: 90%;
+    height: 327px;
+    object-fit: cover;
+}
+
+.tech2-img{
+    width: 469px;
+    height: 313px;
+    object-fit: cover;
+}
+
+
+/* ISM Auditing */
+
+.auditing {
+    background-color: #5595D1;
+    height: 691px;
+}
+
+.auditing-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 5rem;
+
+}
+
+.auditing-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 50%;
+}
+
+.ism1-img {
+    width: 586px;
+    height: 313px;
+    object-fit: cover;
+}
+.ism2-img {
+    width: 469px;
+    height: 540px;
+    object-fit: contain;
+}
+
+
+/* pre-purchase service */
+.pre-purchase{
+    height: 700px;
+    color:#5595D1
+}
+
+
+.pre-img {
+    width: 80%;
+    object-fit: cover;
+    height: 327px;
+}
+
+.pre-purchase-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.pre-purchase-content{
+    color: black;
+    width: 80%;
+    
+}
+
+.cargo-routine {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cargo-routine-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+}
+
+.cargo-routine-content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+@media screen and (max-width:1024px ) {
+    .crew-management{
+        height: max-content;
+        padding: 1rem 0;
+    }
+
+    .crew1-img{
+        display: none;
+    }
+
+    .crew-management-content{
+        width: 70%;
+    }
+
+    .crew-li-img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .tech-support{
+        height: max-content;
+        padding: 1rem 0;
+    }
+
+    .tech-support-content{
+        width:80%
+    }
+    .tech1-img{
+        display: none;
+    }
+
+    .tech2-img{
+        width: 100%;
+    }
+
+    .tech-support-content{
+        flex-direction: column;
+    }
+
+    .auditing{
+        height: max-content;
+        padding:1rem 0;
+    }
+
+    .auditing-container{
+        justify-content: center;
+    }
+
+    .ism1-img{
+        width: 90%;
+    }
+
+    .auditing-content{
+        width: 90%;
+    }
+
+    .ism2-img{
+        display: none;
+    }
+
+    .pre-purchase{
+        height: max-content;
+        padding: 1rem 0
+    }
+}
+
+
+@media screen and (max-width:762px) {
+    
+    .services-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .services-hero-content{
+        width: 70%;
+    }
+
+    .services-hero{
+        background-position: 50%;
+    }
+
+    .ship-management{
+        height: max-content;
+        padding: 1rem 0
+    }
+    .management-one{
+
+        flex-direction: column;
+        
+    }
+
+    .fsm-img{
+        order: 1;
+        width: 80%;
+    }
+
+    .management-two{
+        flex-direction: column;
+    }
+
+    .services-grid{
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,137 @@
+
+
+.footer-container {
+    display: flex;
+    color: white;
+    height: 250px;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 10%;
+    column-gap: .2rem;
+    flex-wrap: wrap;
+    
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+    
+}
+
+.footer-link:hover{
+    color: rgb(219, 216, 216);
+}
+
+.footer-links-container {   
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(90, 151, 208, 1);
+}
+
+
+.footer-links {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-contact-container{
+    width:40%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(90, 151, 208, 1);
+    
+    
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 70%;
+}
+
+.footer-contact-option {
+    display: flex;
+    gap: .7rem;
+    
+}
+
+
+.footer-socials-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(90, 151, 208, 1);
+}
+
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.footer-logo{
+    width: 250px;
+    
+}
+
+
+
+@media screen and (max-width:710px) {
+
+    .footer-container{
+        height: max-content;
+    }
+    .footer-links-container{
+        width:50%;
+    }
+
+    .footer-contact-container{
+        flex-grow: 1;
+    }
+
+    .footer-socials-container{
+        width: 100%;
+    }
+
+    .footer-socials{
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 560px) {
+    
+    .footer-container{
+        flex-direction: column;
+        row-gap: 2px;
+    }
+
+    .footer-contact-container{
+        width: auto;
+        flex-grow: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer-links-container{
+        width: auto;
+        flex-grow: 1;
+        padding-bottom: 1rem;
+    }
+
+    .footer-links{
+        margin-left: 0;
+    }
+}

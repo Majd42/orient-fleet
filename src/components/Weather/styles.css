@@ -1,0 +1,14 @@
+.weather {
+    background-color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.weather img {
+    object-fit: cover;
+    width: 80%;
+}

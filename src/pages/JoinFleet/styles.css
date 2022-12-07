@@ -1,0 +1,117 @@
+.one-img-container{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 101.28%),url('../../assets/Careers/On shore/on shore.jpg');
+    background-size: cover;
+    height: 650px;
+    position: relative;
+    
+
+}
+
+.one-img-content{
+    width: 400px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+
+.contact-form {
+    background-color: #5595D1;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    gap: 3rem;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+  
+    width: 40%;
+    
+}
+
+.employment-details{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    width: 90%;
+
+}
+
+.form-control input {
+    width: 70%;
+    padding: .7rem .5rem;
+    border-radius: 1rem;
+}
+
+.employment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* .upload {
+    padding :1rem .2rem;
+    color:#5595D1;
+} */
+
+.submit-btn {
+    width: 20%;
+    color: #5595D1;
+    padding: .5rem .2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+
+@media screen and (max-width:940px) {
+    .submit-btn{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contact-form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info{
+        width: 80%;
+    }
+
+    .employment-details{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    .form-control input{
+        width: 80%;
+    }
+}

@@ -1,0 +1,149 @@
+.about-header {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 88.03%),url('../../assets/about-main.png');
+    height: 795px;
+    background-size: cover;
+    position: relative;
+    
+
+}
+
+.orient-logo-img {
+    position: absolute;
+    left: 30%;
+    top: 7%;
+    
+    
+}
+
+.orient-letters {
+    position: absolute;
+    left: 126px;
+    top: 200px;
+    object-fit: cover;
+    
+}
+
+.first-letter{
+    color: black;
+    margin-right: 1.5rem;
+    
+}
+
+
+.vision {
+    display: flex;
+    background-color: white;
+    gap: 12rem;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+
+}
+
+.vision-content {
+    width: 35%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+/* .vision-right {
+    position: absolute;
+    top: -55%;
+    right: -6%;
+    width: 150px;
+} */
+/* .vision-right2 {
+    position: absolute;
+    top: -27%;
+    right: 0;
+    width: 70px;
+} */
+
+
+.mission {
+    display: flex;
+    background-color: rgba(90, 151, 208, 1);
+    gap: 12rem;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-content{
+    width: 35%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    
+}
+
+.values {
+    display: flex;
+    background-color: white;
+    gap: 12rem;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+
+}
+
+.values-content {
+    width: 35%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+@media  screen and (max-width:790px) {
+    .vision{
+        flex-direction: column;
+        height: max-content;
+        gap: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .vision-content{
+        width: 70%;
+    }
+    
+
+    .mission{
+        flex-direction: column;
+        height: max-content;
+        gap: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .mission-content{
+        width: 70%;
+    }
+
+    .values{
+        flex-direction: column;
+        height: max-content;
+        gap: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .values-content{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .orient-logo-img{
+        left: 17%;
+    }
+
+    .orient-content-img{
+        left: 50px;
+    }
+}

@@ -1,0 +1,21 @@
+.contact-img-container {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4)  76.14%), url('../../assets/Contact\ us/1.jpg');
+    height: 660px;
+    background-size: cover;
+}
+
+.contact-img-content {
+    color: white;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 3rem;
+    text-align: center;
+    background-position: top;
+}
+
+.contact-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 ;
+}

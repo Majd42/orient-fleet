@@ -1,0 +1,33 @@
+.office-content {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.office-info{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 40%;
+}
+
+.syria-flag{
+    width: 50%;
+}
+
+@media screen and (max-width: 670px) {
+    .office-content{
+        flex-direction: column;
+        
+    }
+
+    .office-info{
+        width: 80%;
+    }
+
+    .syria-flag{
+        width: 80%;
+    }
+}

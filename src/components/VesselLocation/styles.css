@@ -1,0 +1,14 @@
+.vessel-location {
+    background-color: #5595D1;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.vessel-location img {
+    object-fit: cover;
+    width: 80%;
+}

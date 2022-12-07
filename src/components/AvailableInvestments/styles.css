@@ -1,0 +1,28 @@
+
+
+.investments-content{
+    background-color: #5595D1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 0;
+    justify-items: center;
+    gap: 1rem;
+    
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .investments-content{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .investments-content{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
