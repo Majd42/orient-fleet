@@ -1,4 +1,5 @@
-import { Button, Typography, } from '@mui/material'
+
+import { Button, Input, MenuItem, Select, Typography, } from '@mui/material'
 import React from 'react'
 import './styles.css'
 
@@ -21,31 +22,39 @@ const BeOneOfUs = () => {
                 <Typography letterSpacing={2} variant='h5'>Contact Info</Typography>
                 <div className="form-control">
                     <label>First Name</label>
-                    <input className='contact-input' type='text' name='fname' placeholder='FirstName' required/>
+                    <Input sx={{backgroundColor:'white', width:'350px', height:'50px',borderRadius:'.3rem' }} className='contact-input' type='text' name='fname' required/>
                 </div>
                 <div className="form-control">
                     <label>Last Name</label>
-                    <input className='contact-input' type='text' name='lname'  required/>
+                    <Input sx={{backgroundColor:'white', width:'350px', height:'50px',borderRadius:'.3rem' }} className='contact-input' type='text' name='lname'  required/>
                 </div>
                 <div className="form-control">
                     <label>Email</label>
-                    <input className='contact-input' type='email' name='email'  required/>
+                    <Input sx={{backgroundColor:'white', width:'350px', height:'50px',borderRadius:'.3rem' }} className='contact-input' type='email' name='email'  required/>
                 </div>
                 <div className="form-control">
                     <label>Mobile</label>
-                    <input className='contact-input' type='text' name='mobile'  />
+                    <Input sx={{backgroundColor:'white', width:'350px', height:'50px',borderRadius:'.3rem' }} className='contact-input' type='text' name='mobile'  />
                 </div>
             </div>
             <div className="employment-details">
                 <Typography letterSpacing={2} variant='h5'>Employment Details</Typography>
                 <div className="employment-info">
-                    <div className="form-control">
-                        <label>Availability</label>
-                        <input className='contact-input' type='text' name='availability'  required/>
+                    <div style={{display:'flex', flexDirection:'column',gap: '.2rem'}} className="select-availability">
+
+                        <label ><Typography fontSize={22} >Availability</Typography></label>
+                        <Select sx={{backgroundColor:'white', borderRadius:'.3rem', height:'50px', width:'350px',}}  >
+                            <MenuItem value={'one'} >option</MenuItem>
+                            <MenuItem value={'two'} >option two</MenuItem>
+                            <MenuItem value={'three'} > option three</MenuItem>
+                        </Select>
                     </div>
                     <div className="atachment-info">
                         <Typography letterSpacing={2} gutterBottom variant='h5' color='white'>Atachment Information</Typography>
-                        <input className='upload' type='file' required />
+                        <label className='file-upload'>
+                            Browse
+                            <input type='file' />
+                        </label>
                     </div>
                 </div>
 

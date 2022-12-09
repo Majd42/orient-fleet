@@ -14,27 +14,28 @@ import Footer from "./components/Footer/Footer"
 import Captain from "./pages/Captain/Captain"
 import Status from "./pages/Status/Status"
 import BeOneOfUs from "./pages/BeOneOfUs/BeOneOfUs"
+import { useTranslation } from 'react-i18next';
 
 function App() {
 
   const [openLogin, setOpenLogin] = useState(false)
   const [loggedin, setLoggedin]= useState(false)
-
-
+  const [t, i18next] = useTranslation()
+  const [lang, setLang]= useState('en')
 
   return (
     <>
       <BrowserRouter>
-        <Navbar loggedin={loggedin} setOpenLogin={setOpenLogin} />
+        <Navbar setLang={setLang} loggedin={loggedin} setOpenLogin={setOpenLogin} />
         {openLogin && <Login setLoggedin={setLoggedin} setOpenLogin={setOpenLogin} />}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/Investments" element={<Investments />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/media" element={<Media />} />
+          <Route path="/" element={<Home lang={lang} />} />
+          <Route path={t('page1')} element={<About />} />
+          <Route path={t('page2')}  element={<Services />} />
+          <Route path={t('page3')}  element={<Investments />} />
+          <Route path={t('page4')}  element={<Careers />} />
+          <Route path={t('page5')}  element={<Contact />} />
+          <Route path={t('page6')}  element={<Media />} />
           <Route path="/captain" element={<Captain />} />
           <Route path="/status" element={<Status />} />
           <Route path="/beoneofus" element={<BeOneOfUs />} />

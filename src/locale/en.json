@@ -1,0 +1,35 @@
+{
+    "page1": "About",
+    "page2": "Services",
+    "page3": "Investments",
+    "page4": "Careers",
+    "page5": "Contact",
+    "page6": "Media",
+    "pageLogin": "Login",
+
+
+
+    
+    "homeMainHeader": "Partner of your Secure Future",
+    "homeMainText": "Build a business mindset that opens up oppertunities in a large market with a lot of competitors, that is our first motivation in working",
+    "learnMoreText": "Learn More",
+    "aboutTitle": "About us",
+    "aboutText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
+
+    "servicesTitle": "Services",
+    "servicesText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati? ",
+
+    "contactTitle": "Contact",
+    "contactText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
+    "successCounterTitle":"Success Counter",
+    "expText": "Our experience",
+    "countriesText": "Countries",
+    "seafarersText": "Seafarers Worldwide",
+    "vesselsText": "Vessels managed by us",
+    "globalOfficesText": "Global Offices",
+    "beforeScorllText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
+
+
+
+    "rights": "2022 Orient Fleet | All Rights Reserved"
+}

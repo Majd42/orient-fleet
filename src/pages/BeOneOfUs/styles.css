@@ -22,11 +22,12 @@
 
 .contact-form {
     background-color: #5595D1;
-    padding: 2rem 0;
+    padding: 4rem 0;
     display: flex;
     justify-content: center;
-
-    gap: 3rem;
+    width: 100%;
+    
+    gap: 2rem;
     color: white;
 }
 
@@ -41,10 +42,11 @@
 }
 
 .employment-details{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
+ 
 }
 
 .form-control {
@@ -58,7 +60,7 @@
 .form-control input {
     width: 70%;
     padding: .7rem .5rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: none;
 }
 
@@ -68,10 +70,14 @@
     gap: 4rem;
 }
 
-/* .upload {
-    padding :1rem .2rem;
+.upload {
+    padding :.5rem 1rem;
     color:#5595D1;
-} */
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 1.4rem;
+    border: none;
+}
 
 .submit-btn {
     width: 20%;
@@ -89,14 +95,26 @@
     padding: 1rem 0;
 }
 
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    padding :.5rem 1rem;
+    color:#5595D1;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: white;
+    
+}
 
 @media screen and (max-width:940px) {
     .submit-btn{
         width: 40%;
     }
-}
 
-@media screen and (max-width:700px) {
     .contact-form{
         flex-direction: column;
         align-items: center;
@@ -112,8 +130,11 @@
 }
 
 
+
+
 @media screen and (max-width:440px) {
     .form-control input{
         width: 80%;
     }
 }
+

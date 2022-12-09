@@ -39,3 +39,7 @@
     color: inherit;
     background-color: #64a9e6;
 }
+
+.lang-select-flag {
+    width: 30px;
+}

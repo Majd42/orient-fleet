@@ -1,7 +1,5 @@
 import React from 'react'
 import './styles.css'
-import orientContent from '../../assets/orient.png'
-import orientLogo from '../../assets/orient-logo.png'
 import eye from '../../assets/eye.png'
 import bullseye from '../../assets/bullseye.png'
 import hand from '../../assets/hand.png'

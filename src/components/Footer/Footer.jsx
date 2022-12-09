@@ -10,10 +10,16 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import { useTranslation } from 'react-i18next';
 import './styles.css'
 
+
+
 const Footer = () => {
+
+  const [t, i18next] = useTranslation()
+
+
   return (
     <footer>
 
@@ -22,23 +28,23 @@ const Footer = () => {
           <div className="footer-links-container">
               <div className="footer-links">
                 <img className='footer-logo' src={logo} alt="alt"  />
-                <Link to='/about' className='footer-link'>
-                  <Typography>About Us</Typography>
+                <Link to={t('page1')} className='footer-link'>
+                  <Typography>{t('page1')}</Typography>
                 </Link> 
-                <Link to='/services' className='footer-link'>
-                  <Typography>Services</Typography>
+                <Link to={t('page2')} className='footer-link'>
+                  <Typography>{t('page2')}</Typography>
                 </Link>
-                <Link to='/investments' className='footer-link'>
-                  <Typography>Investments</Typography>
+                <Link to={t('page3')} className='footer-link'>
+                  <Typography>{t('page3')}</Typography>
                 </Link>
-                <Link to='/careers' className='footer-link'>
-                  <Typography>Careers</Typography>
+                <Link to={t('page4')} className='footer-link'>
+                  <Typography>{t('page4')}</Typography>
                 </Link>
-                <Link to='/contact' className='footer-link'>
-                  <Typography>Contact Us</Typography>
+                <Link to={t('page5')} className='footer-link'>
+                  <Typography>{t('page5')}</Typography>
                 </Link>
-                <Link to='/media' className='footer-link'>
-                  <Typography>Media</Typography>
+                <Link to={t('page6')} className='footer-link'>
+                  <Typography>{t('page6')}</Typography>
                 </Link>
               </div>
           </div>
@@ -81,7 +87,7 @@ const Footer = () => {
           </div>
       </div>
 
-      <Typography sx={{backgroundColor:'#5a97d0', color: 'white', textAlign:'center', paddingTop:'10px', paddingBottom:'.5rem'}} variant='subtitle2'>&#169; 2022 Orient Fleet | All Rights Reserved </Typography>
+      <Typography sx={{backgroundColor:'#5a97d0', color: 'white', textAlign:'center', paddingTop:'10px', paddingBottom:'.5rem'}} variant='subtitle2'>&#169; {t('rights')} </Typography>
 
     </footer>
   )
