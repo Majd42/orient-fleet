@@ -89,7 +89,7 @@ const WeAreIn =() => {
                 </div>
                 <div className="country">
                     <img src={UK} alt=""/>
-                    <Typography      color='white' variant='h5' letterSpacing={2} >United Kingdom</Typography>
+                    <Typography      color='white' variant='h5' letterSpacing={2} >UK</Typography>
                 </div>
                 <div className="country">
                     <img src={Lebanon} alt=""/>
