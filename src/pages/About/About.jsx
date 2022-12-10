@@ -5,8 +5,11 @@ import bullseye from '../../assets/bullseye.png'
 import hand from '../../assets/hand.png'
 import { Typography } from '@mui/material'
 import right from '../../assets/right.png'
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+
+  const [t, i18next]= useTranslation();
   return (
     <div className="about-container">
       <div className='about-header'>
@@ -29,10 +32,9 @@ const About = () => {
         {/* <img src={right} alt="alt" className="vision-right" />
         <img src={right} alt="alt" className="vision-right2" /> */}
         <div className="vision-content">
-          <Typography variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>Our Vision</Typography>
-          <Typography variant='body2' >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit. Eius culpa a placeat, perspiciatis rerum maiores facilis sed molestias?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit. Eius culpa a placeat, 
+          <Typography variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('visionTitle')}</Typography>
+          <Typography variant='body2' fontSize={18} >
+            {t('visionText')}
           </Typography>
         </div>
         <img src={eye} alt="alt" className="vision-img" />
@@ -42,10 +44,9 @@ const About = () => {
       <div className="mission">
         <img src={bullseye} alt="alt" className="misson-img" />
         <div className="mission-content">
-          <Typography variant='h5' fontWeight={600} sx={{color:'white'}}>Our Mission</Typography>
-          <Typography sx={{color:'white'}} variant='body2' >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit. Eius culpa a placeat, perspiciatis rerum maiores facilis sed molestias?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit. Eius culpa a placeat, 
+          <Typography variant='h5' fontWeight={600} sx={{color:'white'}}>{t('missionTitle')}</Typography>
+          <Typography sx={{color:'white'}} variant='body2' fontSize={18} >
+          {t('missionText')}
           </Typography>
         </div>
       </div>
@@ -54,10 +55,9 @@ const About = () => {
       {/* values section */}
       <div className="values">
         <div className="values-content">
-          <Typography variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>Our Values</Typography>
-          <Typography variant='body2' >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit. Eius culpa a placeat, perspiciatis rerum maiores facilis sed molestias?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit. Eius culpa a placeat, 
+          <Typography variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('valuesTitle')}</Typography>
+          <Typography variant='body2' fontSize={18} >
+          {t('valuesText')}
           </Typography>
         </div>
 

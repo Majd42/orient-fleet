@@ -27,7 +27,7 @@ const Footer = () => {
 
           <div className="footer-links-container">
               <div className="footer-links">
-                <img className='footer-logo' src={logo} alt="alt"  />
+                <Link to='/' style={{textDecoration: 'none'}}><img className='footer-logo' src={logo} alt="alt"  /></Link>
                 <Link to={t('page1')} className='footer-link'>
                   <Typography>{t('page1')}</Typography>
                 </Link> 

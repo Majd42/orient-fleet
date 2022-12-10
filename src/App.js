@@ -31,7 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
           <Route path={t('page1')} element={<About />} />
-          <Route path={t('page2')}  element={<Services />} />
+          <Route path={t('page2')}  element={<Services lang={lang} />} />
           <Route path={t('page3')}  element={<Investments />} />
           <Route path={t('page4')}  element={<Careers />} />
           <Route path={t('page5')}  element={<Contact />} />

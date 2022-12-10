@@ -11,15 +11,20 @@ import ISM1 from '../../assets/Services/ISM 1.jpg'
 import ISM2 from '../../assets/Services/ISM 2.jpg'
 import Pre from '../../assets/Services/Pre Purchase Inspection.jpeg'
 import Cargo from '../../assets/Services/Cargo.jpg'
+import { useTranslation } from 'react-i18next';
 
-const Services = () => {
+const Services = ({lang}) => {
 
+
+  const [t, i18next]= useTranslation();
+  const titleDynamicSpacing= lang==='en'? 10 : 0
+  const textDynamicSpacing = lang ==='en'?2: 0
   return (
     <div className='services-container'>
       <div className="services-hero">
         <div className="services-hero-content">
-          <Typography sx={{color:'white', }} variant='h4' letterSpacing={10}>Our Services</Typography>
-          <Typography sx={{color:'white'}} variant='body2' letterSpacing={2} >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quos ad    excepturi voluptatibus neque, explicabo pariatur, maxime praesentium similique voluptatem quae sunt   possimus molestiae voluptas unde voluptates eligendi nam iste adipisci corrupti. Laudantium libero accusantium exercitationem ut? Facilis, voluptates! Nostrum!
+          <Typography sx={{color:'white', }} variant='h4' letterSpacing={titleDynamicSpacing}>{t('servicesTitle')}</Typography>
+          <Typography sx={{color:'white'}} variant='body2' letterSpacing={textDynamicSpacing} >{t('servicesText')}
           </Typography>
         </div>
       </div>
@@ -36,7 +41,7 @@ const Services = () => {
 
             <a href='#techSupport' style={{textDecoration: 'none'}}>
               <div className="service order1">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>Technical and operational support services</Typography>
+                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>{t('servicesTitle')}</Typography>
               </div>
             </a>
 

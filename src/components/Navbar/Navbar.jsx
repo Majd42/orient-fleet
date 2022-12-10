@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {AppBar, Box, Toolbar, Container, Typography, Menu, MenuItem, IconButton, Avatar, Divider,InputLabel, Button} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import LOGO from '../../assets/logo.png'
+import LOGO from '../../assets/header.svg'
 import { Link } from 'react-router-dom'
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
@@ -44,8 +44,8 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
           
         <Toolbar>
           <Box sx={{flexGrow: 1}} component={Link} to='/'>
-            {/* <img className='logo' src={LOGO} alt="logo" /> */}
-            <Typography variant='h4'>Orient Fleet</Typography>
+            <img className='logo' src={LOGO} alt="logo" />
+            
             
           </Box>
              
