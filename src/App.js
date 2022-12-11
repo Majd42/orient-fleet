@@ -7,6 +7,8 @@ import Careers from './pages/Careers/Careers'
 import Media from './pages/Media/Media'
 import Contact from './pages/Contact/Contact'
 import Services from "./pages/Services/Services"
+import JoinFleet from './pages/JoinFleet/JoinFleet'
+import GuidVessels from './pages/GuidVessels/GuidVessels'
 import { useState } from "react"
 import Login from "./components/Login/Login"
 import './index.css'
@@ -15,6 +17,8 @@ import Captain from "./pages/Captain/Captain"
 import Status from "./pages/Status/Status"
 import BeOneOfUs from "./pages/BeOneOfUs/BeOneOfUs"
 import { useTranslation } from 'react-i18next';
+import './font/KUFISTANDARDGK.TTF'
+
 
 function App() {
 
@@ -22,11 +26,12 @@ function App() {
   const [loggedin, setLoggedin]= useState(false)
   const [t, i18next] = useTranslation()
   const [lang, setLang]= useState('en')
-
+  
+  
   return (
     <>
       <BrowserRouter>
-        <Navbar setLang={setLang} loggedin={loggedin} setOpenLogin={setOpenLogin} />
+        <Navbar  setLang={setLang} loggedin={loggedin} setOpenLogin={setOpenLogin} />
         {openLogin && <Login setLoggedin={setLoggedin} setOpenLogin={setOpenLogin} />}
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
@@ -39,8 +44,8 @@ function App() {
           <Route path="/captain" element={<Captain />} />
           <Route path="/status" element={<Status />} />
           <Route path="/beoneofus" element={<BeOneOfUs />} />
-          <Route path="/referabusiness" element={<BeOneOfUs />} />
-          <Route path="/joinourfleet" element={<BeOneOfUs />} />
+          <Route path="/guidvessels" element={<GuidVessels />} />
+          <Route path="/joinourfleet" element={<JoinFleet />} />
 
 
           

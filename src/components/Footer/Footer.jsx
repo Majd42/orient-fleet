@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
               <div className="footer-contact-option">
                 <EmailIcon />
-                <Typography variant='body2' sx={{color:'white'}}>info@oriantfleet.me</Typography>
+                <Typography  variant='body2' sx={{color:'white'}}><a className='email-link' style={{color: 'white'}} href='mailto:info@orientfleet.me'>info@orientfleet.me</a></Typography>
               </div>
               <div className="footer-contact-option">
                 <LocationOnIcon />

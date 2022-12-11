@@ -1,9 +1,12 @@
+
+
 .home-container {
     background-color: rgba(126, 191, 196, 1);
-    ;
+    font-family: 'myFont';
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 
@@ -298,6 +301,10 @@
         width: 100%;
         margin-left: 0;
         padding:1rem
+    }
+
+    .scroll-top{
+        height: max-content;
     }
     
 }

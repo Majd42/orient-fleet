@@ -41,7 +41,7 @@ const Services = ({lang}) => {
 
             <a href='#techSupport' style={{textDecoration: 'none'}}>
               <div className="service order1">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>{t('servicesTitle')}</Typography>
+                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>{t('servicesTitle')} </Typography>
               </div>
             </a>
 
@@ -73,7 +73,7 @@ const Services = ({lang}) => {
               </div>
             </a>
 
-            <a href='#' style={{textDecoration:'none'}}>
+            <a href='#cargoRoutine' style={{textDecoration:'none'}}>
 
               <div className="service order6">
                 <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>Cargo Routine Inspection and Surveys</Typography>
@@ -255,7 +255,7 @@ const Services = ({lang}) => {
 
 
       {/* Cargo Routine Inspection */}
-      <div className="cargo-routine">
+      <div id='#cargoRoutine' className="cargo-routine">
         <Typography color='#5595D1' variant='h4' textAlign='center' padding={4} letterSpacing={9}>Cargo Routine Inspection</Typography>
         <div className="cargo-routine-content">
           <img src={Cargo} alt="" />

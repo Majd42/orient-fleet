@@ -6,10 +6,10 @@ import './styles.css'
 const BeOneOfUs = () => {
   return (
     <div>
-        <div className="join-img-container">
-            <div className="join-img-content">
+        <div className="guid-img-container">
+            <div className="guid-img-content">
 
-                <Typography color='white' variant='h3' letterSpacing={2}>Join Our Fleet</Typography>
+                <Typography color='white' variant='h3' letterSpacing={2}>Guide Vessels to Us</Typography>
                 <Typography
                 varinat='body1' color='white' letterSpacing={2}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit asperiores animi molestiae nisi voluptatum dolores? Voluptas, accusantium. Accusamus, illum voluptate.
                 </Typography>

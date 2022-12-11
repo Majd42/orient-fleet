@@ -12,7 +12,7 @@ const HeadOffice = () => {
                 <Typography variant='h4' color='#5595D1'>Syria</Typography>
                 <Typography variant='body1'>P.o.Box- 0000 Baghdad Street, Next to Latin Church LATAKIA - SYRIA</Typography>
                 <Typography variant='body1'>
-                  Email:<a href="mailto:info@orientfleet.me"> info@orientfleet.me</a>
+                  Email:<a style={{color:'black',}} className='email-link' href="mailto:info@orientfleet.me"> info@orientfleet.me</a>
                 </Typography>
                 <Typography variant='body1'>Mob: +963 930 770 666</Typography>
                 <Typography variant='body1'>Tel: +963 041 9994</Typography>

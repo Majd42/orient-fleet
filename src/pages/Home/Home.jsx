@@ -10,16 +10,17 @@ const Home = ({lang}) => {
 
   const [t, i18next] = useTranslation()
   const dynamicSpacing = lang === 'ar' ? 1 : 15
+  const TextDynamicSpacing = lang === 'ar' ? 0 : 2
   return (
     <>
       {/* First Section. ends before success counter */}
-      <div className='home-container'>
+      <div  className='home-container'>
         <div id='firstSection' className='first-section'>
           <div className='first-content'>
             {/* <Typography>{t('title')}</Typography> */}
-            <Typography fontWeight={500} letterSpacing={2} textAlign='center' variant='h3'>{t('homeMainHeader')}</Typography>
+            <Typography  fontWeight={500} letterSpacing={TextDynamicSpacing} textAlign='center' variant='h3'>{t('homeMainHeader')}</Typography>
 
-            <Typography letterSpacing={2} textAlign='center' marginTop={4} variant='body1'>{t('homeMainText')}</Typography>
+            <Typography  letterSpacing={TextDynamicSpacing} textAlign='center' marginTop={4} variant='h6  '>{t('homeMainText')}</Typography>
 
             
             <Button component={Link} to={t('page2')} sx={{marginTop: '3rem', textAlign:'center', backgroundColor:'#5595D0', borderRadius:'1.2rem'}} variant='contained'>
@@ -32,7 +33,7 @@ const Home = ({lang}) => {
         <Link style={{textDecoration: 'none'}} to='/about'>
           <Box className="about-section">
             <div className='about-content'>
-              <Typography variant='h2' letterSpacing={dynamicSpacing} fontSize={50} fontWeight={600} sx={{color: 'white'}}>{t('aboutTitle')}</Typography>
+              <Typography  variant='h2' letterSpacing={dynamicSpacing} fontSize={50} fontWeight={600} sx={{color: 'white'}}>{t('aboutTitle')}</Typography>
               <Typography lineHeight={1.8} variant='body2' letterSpacing={2} sx={{color:'white',}}>{t('aboutText')} </Typography>
             </div>
           </Box>

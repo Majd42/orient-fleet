@@ -25,7 +25,7 @@ const CareersMain = () => {
                 </Card>
             </Link>
 
-            <Link to='/referabusiness' style={{textDecoration:'none'}}>
+            <Link to='/guidvessels' style={{textDecoration:'none'}}>
 
                 <Card sx={{maxWidth: 345}}>
                     <CardMedia 
@@ -35,7 +35,7 @@ const CareersMain = () => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography textAlign='center' variant='h4' >Refer A business</Typography>
+                        <Typography textAlign='center' variant='h4' >Guide Vessels to Us</Typography>
                     </CardContent>
                 </Card>
             </Link>

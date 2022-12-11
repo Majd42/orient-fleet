@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 import './styles.css'
-import UK from '../../assets/Contact us/Flag_of_the_United_Kingdom.svg.png'
 import { useTranslation } from 'react-i18next';
 
 const Navbar = ({loggedin, setOpenLogin, setLang}) => {
@@ -14,12 +13,14 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
   // const pages = ['About', 'Services', 'Investments', 'Careers', 'Contact', 'Media',]
   
   const [anchor, setAnchor]= useState(null)
-  
+  const [userAnchor, setUserAnchor] = useState(null)
   const [t, i18next] = useTranslation()
   
 
 
   const pages = [t('page1'), t('page2'), t('page3'), t('page4'), t('page5'), t('page6')]
+
+
   const handleOpenMenu =(e) => {
     setAnchor(e.currentTarget)
   }
@@ -28,9 +29,14 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
     setAnchor(null)
   }
 
-  // const handleChangeLang= (e) => {
-  //   setLanguage(e.target.value)
-  // }
+  const handleOpenUserMenu = (e)=> {
+    setUserAnchor(e.currentTarget)
+  }
+
+  const handleCloseUserMenu =(e) => {
+    setUserAnchor(null)
+  }
+
 
   
   const handleOpenLogin = () => {
@@ -138,7 +144,36 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
                   </FormControl>
                 </Box>
                 </Button>
-            {loggedin && <Avatar sx={{backgroundColor:'#5595D0',marginLeft:'1rem' }}>M</Avatar>}
+            {loggedin && 
+              <Box sx={{flexGrow: 0,   }}>
+                <IconButton sx={{ p: 0, width: '40px', justifySelf:'center'  }} onClick={handleOpenUserMenu}  >
+                  <Avatar sx={{backgroundColor:'#5595D0',marginLeft:'1rem' }}>M</Avatar>
+                </IconButton>
+                <Menu
+                  sx={{ mt: '45px',  }}
+                  id="menu-appbar"
+                  anchorEl={userAnchor}
+                  
+                  keepMounted
+                  anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  open={Boolean(userAnchor)}
+                  onClose={handleCloseUserMenu}
+                  
+                  transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                  }}
+                >
+              
+                <MenuItem  onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">Sign out</Typography>
+                </MenuItem>
+             
+              </Menu>
+            </Box>}
 
         </Toolbar>
       </Container>

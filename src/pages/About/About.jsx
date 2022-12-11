@@ -17,7 +17,7 @@ const About = () => {
         <img src={orientContent} alt='alt' className='orient-content-img'/> */}
         <Typography fontSize={55} letterSpacing={25} className='orient-logo-img' fontFamily='monospace'>Orient</Typography>
         <div className="orient-letters">
-          <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>O</span>pportunity</Typography>
+          <Typography  gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>O</span>pportunity</Typography>
           <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>R</span>eality</Typography>
           <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>I</span>mprovement</Typography>
           <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>E</span>mpowerment</Typography>
@@ -32,7 +32,7 @@ const About = () => {
         {/* <img src={right} alt="alt" className="vision-right" />
         <img src={right} alt="alt" className="vision-right2" /> */}
         <div className="vision-content">
-          <Typography variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('visionTitle')}</Typography>
+          <Typography  variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('visionTitle')}</Typography>
           <Typography variant='body2' fontSize={18} >
             {t('visionText')}
           </Typography>

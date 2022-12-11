@@ -53,6 +53,8 @@
     gap: 1.5rem;
     font-weight: bold;
     width: 40%;
+    justify-content: center;
+    align-items: center;
    
 }
 

@@ -32,6 +32,15 @@
 }
 
 
+.email-link {
+    text-decoration: none;
+}
+
+.email-link:hover{
+    text-decoration: underline;
+}
+
+
 .footer-links {
     margin-left: 2rem;
     margin-top: 2rem;
