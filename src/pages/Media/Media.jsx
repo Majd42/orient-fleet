@@ -11,16 +11,13 @@ import L8 from '../../assets/Media/L8.jpg'
 import L9 from '../../assets/Media/L9.jpg'
 import L10 from '../../assets/Media/L10.jpg'
 import L11 from '../../assets/Media/L11.jpg'
-import B1 from '../../assets/Media/B1.png'
 import B2 from '../../assets/Media/B2.jpg'
 import B3 from '../../assets/Media/B3.jpg'
 import B4 from '../../assets/Media/B4.jpg'
 import B5 from '../../assets/Media/B5.jpg'
-import T1 from '../../assets/Media/T1.png'
 import T2 from '../../assets/Media/T2.png'
 import T3 from '../../assets/Media/T3.png'
 import T4 from '../../assets/Media/T4.jpg'
-import tartus from '../../assets/Media/tartus.jpg'
 
 
 const Media = () => {
