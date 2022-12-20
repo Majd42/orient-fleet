@@ -7,22 +7,32 @@ import { Typography } from '@mui/material'
 import right from '../../assets/right.png'
 import { useTranslation } from 'react-i18next';
 
-const About = () => {
+const About = ({lang}) => {
 
   const [t, i18next]= useTranslation();
+
+
+  const styles = {
+    fontFamily: lang ==='ar'? 'myFont': '',
+    direction:lang==='ar'?'rtl' :'ltr',
+  }
+
+  const dynamicSpacing = lang === 'ar' ? 1 : 15
+  const wordSpacing = lang === 'ar' ? 0 : 6
+
   return (
     <div className="about-container">
       <div className='about-header'>
         {/* <img src={orientLogo} alt='alt' className='orient-logo-img'/>
         <img src={orientContent} alt='alt' className='orient-content-img'/> */}
-        <Typography fontSize={55} letterSpacing={25} className='orient-logo-img' fontFamily='monospace'>Orient</Typography>
-        <div className="orient-letters">
-          <Typography  gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>O</span>pportunity</Typography>
-          <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>R</span>eality</Typography>
-          <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>I</span>mprovement</Typography>
-          <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>E</span>mpowerment</Typography>
-          <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>N</span>eoteric</Typography>
-          <Typography gutterBottom letterSpacing={6} fontSize={30} color='#5595D1'><span className='first-letter'>T</span>transparency</Typography>
+        <Typography style={styles} fontSize={55} letterSpacing={dynamicSpacing} className='orient-logo-img' fontFamily='monospace'>{t('aboutOrientHeader')}</Typography>
+        <div className="orient-letters" style={{left: lang ==='ar'?'20%':''}} >
+          <Typography style={styles}   gutterBottom letterSpacing={wordSpacing} fontSize={30} color='#5595D1'><span className='first-letter'>{t('firstLetter')}</span>{t('firstWord')}</Typography>
+          <Typography style={styles} gutterBottom letterSpacing={wordSpacing} fontSize={30} color='#5595D1'><span className='first-letter'>{t('secondLetter')}</span>{t('secondWord')}</Typography>
+          <Typography style={styles} gutterBottom letterSpacing={wordSpacing} fontSize={30} color='#5595D1'><span className='first-letter'>{t('thirdLetter')}</span>{t('thirdWord')}</Typography>
+          <Typography style={styles} gutterBottom letterSpacing={wordSpacing} fontSize={30} color='#5595D1'><span className='first-letter'>{t('fourthLetter')}</span>{t('fourthWord')}</Typography>
+          <Typography style={styles} gutterBottom letterSpacing={wordSpacing} fontSize={30} color='#5595D1'><span className='first-letter'>{t('fifthLetter')}</span>{t('fifthWord')}</Typography>
+          <Typography style={styles} gutterBottom letterSpacing={wordSpacing} fontSize={30} color='#5595D1'><span className='first-letter'>{t('sixLetter')}</span>{t('sixWord')}</Typography>
         </div>
 
       </div>
@@ -32,8 +42,8 @@ const About = () => {
         {/* <img src={right} alt="alt" className="vision-right" />
         <img src={right} alt="alt" className="vision-right2" /> */}
         <div className="vision-content">
-          <Typography  variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('visionTitle')}</Typography>
-          <Typography variant='body2' fontSize={18} >
+          <Typography  style={styles}   variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('visionTitle')}</Typography>
+          <Typography  style={styles}  variant='body2' fontSize={18} >
             {t('visionText')}
           </Typography>
         </div>
@@ -44,8 +54,8 @@ const About = () => {
       <div className="mission">
         <img src={bullseye} alt="alt" className="misson-img" />
         <div className="mission-content">
-          <Typography variant='h5' fontWeight={600} sx={{color:'white'}}>{t('missionTitle')}</Typography>
-          <Typography sx={{color:'white'}} variant='body2' fontSize={18} >
+          <Typography  style={styles}  variant='h5' fontWeight={600} sx={{color:'white'}}>{t('missionTitle')}</Typography>
+          <Typography  style={styles}  sx={{color:'white'}} variant='body2' fontSize={18} >
           {t('missionText')}
           </Typography>
         </div>
@@ -55,8 +65,8 @@ const About = () => {
       {/* values section */}
       <div className="values">
         <div className="values-content">
-          <Typography variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('valuesTitle')}</Typography>
-          <Typography variant='body2' fontSize={18} >
+          <Typography  style={styles}  variant='h5' fontWeight={600} sx={{color:'#5595D1'}}>{t('valuesTitle')}</Typography>
+          <Typography  style={styles}  variant='body2' fontSize={18} >
           {t('valuesText')}
           </Typography>
         </div>

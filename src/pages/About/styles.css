@@ -84,7 +84,8 @@
     display: flex;
     background-color: white;
     gap: 12rem;
-    height: 260px;
+    height: 100%;
+    padding: 3rem 0;
     justify-content: center;
     align-items: center;
     position: relative;

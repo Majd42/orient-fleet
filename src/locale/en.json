@@ -27,18 +27,34 @@
     "seafarersText": "Seafarers Worldwide",
     "vesselsText": "Vessels managed by us",
     "globalOfficesText": "Global Offices",
-    "beforeScorllText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
+    "beforeScorllText": "",
 
     
 
     "visionTitle": "Our Vision",
-    "visionText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
+    "visionText": "To be your secure future partner, we believe that joint pursuit is what opens new horizons and the most profitable investments, and we stand firmly behind what we believe in to fulfill all the needs of our stakeholders.",
     "missionTitle": "Our Mission",
-    "missionText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?tempore recusandae?",
-    "valuesTitle": "Our Values",
-    "valuesText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore,consectetur adipisicing elit. recusandae,Quibusdam quisquam sit officiis nisi obcaecati?tempore recusandae?",
+    "missionText": "We constantly strive to maximize our clients' revenues by providing quality and benefiting from our extensive experience in the field, transparency through technology, and better service through employee inspiration and continuous training.",
+    "valuesText": "We live our values in the context of our daily work on two levels The first is our commitment to maintaining environmental sustainability by implementing all international regulations related to the safety of people and ships, minimizing emissions and maximum protection from marine pollution.The second is our commitment to making our clients feel primarily that they are in safe hands and that their assets are well developed.",
     
 
+
+
+    "aboutOrientHeader": "Orient",
+
+
+    "firstLetter":"O",
+    "secondLetter":"R",
+    "thirdLetter":"I",
+    "fourthLetter":"E",
+    "fifthLetter":"N",
+    "sixLetter":"T",
+    "firstWord":"rient",
+    "secondWord":"eality",
+    "thirdWord":"mprovment",
+    "fourthWord":"mpowerment",
+    "fifthWord":"eoteric",
+    "sixWord":"ransparency",
 
     "rights": "2022 Orient Fleet | All Rights Reserved"
 }

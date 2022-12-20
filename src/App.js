@@ -35,7 +35,7 @@ function App() {
         {openLogin && <Login setLoggedin={setLoggedin} setOpenLogin={setOpenLogin} />}
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
-          <Route path={t('page1')} element={<About />} />
+          <Route path={t('page1')} element={<About lang={lang} />} />
           <Route path={t('page2')}  element={<Services lang={lang} />} />
           <Route path={t('page3')}  element={<Investments />} />
           <Route path={t('page4')}  element={<Careers />} />
