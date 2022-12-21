@@ -17,7 +17,7 @@
     "aboutText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
 
     "servicesTitle": "Services",
-    "servicesText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati? ",
+    "servicesText": "our variety of services are guaranteed and well managed to ensure the satisfaction and safety of all of our clients as well as following all maritime laws and codes. ",
 
     "contactTitle": "Contact",
     "contactText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. tempore recusandae,Quibusdam quisquam sit officiis nisi obcaecati?",
@@ -56,5 +56,96 @@
     "fifthWord":"eoteric",
     "sixWord":"ransparency",
 
+
+
+    "technicalSupport":"Technical and Operational Support",
+    "shipManagement":"Full Ship Management",
+    "crewManagement":"Crew Management",
+    "ISM": "ISM/ISPS/MLC auditing",
+    "prePurchase":"Pre-Purchase Inspections",
+    "cargoRoutine":"Cargo Routine Inspection and Surveys ",
+
+
+
+
+
+    
+    "fsmHeader":"We manage all technical aspects by the fleet team with  high efficiency to include our management:",
+    "fsmService1":"Monitoring of the vessel through an online tracking system of our management ",
+    "fsmService2":"Shipping Services.",
+    "fsmService3":"Ship's certificates.",
+    "fsmService4":"Develop security plans in line with international regulations and standards (ISPS).",
+    "fsmService5":"Providing the best offers for ship insurance according to its specification’s security procedures.",
+    "fsmService6":"Ship inspection surveys.",
+    "fsmService7":"Establishment of a safe ship management system in accordance with international standards and regulations (ISM).",
+
+
+
+    "managementHeader":"The crew is the vital nerve of the ship and must be ready to complete all the tasks required of it correctly in order to avoid errors and to maintain the power of operation at the highest level, we are committed to the basic standards in:",
+    "managementService1":"Assign the appropriate crew to meet the ship's needs. ",
+    "managementService2":"Follow up on regular training on safety procedures according to international standards on board.",
+    "managementService3":"Travel logistics.",
+    "managementService4":"Complete the issuance of certificates of conformity for the ship's crew in proportion to the flag it represents.",
+    "managementService5":"We are keen to abide by the times of rest and work, and to secure the full equipment of the crew rooms and the ship's restaurant.",
+    "managementService6":"Compliance with all MLC regulations.",
+
+
+
+
+
+
+
+    "technicalHeader":"We provide a wide range of technical services to ship owners:",
+    "technicalService1":"Dealing with shipyards, evaluating specifications, obtaining approvals and conceptual designs.",
+    "technicalService2":"Environmental Sustainability Solutions.",
+    "technicalService3":"Dry docking support.",
+    "technicalService4":"Risk Management.",
+    "technicalService5":"Ship structural assessments.",
+    "technicalService6":"Life Extension Programs.",
+
+
+
+    "ismText":"Our auditors are qualified by the most reputable Ship Register We provide internal audit services for Ship and/or Offshore Management Companies / Owners. We have qualified lead auditors for ISM, ISPS and MLC who will follow the required code and your management procedures to minimize your expert employment charges as well as you're travelling expenses. Our auditors are the same who are carrying out audit ships during the Flag Inspections or audits for the most reputable convenience flag so you will have this advantage with respects to others you could hire or even using your own employers. Our auditors are qualified by the most reputable Ship Registers or Class so the quality of the audit is granted",
+
+
+    "onOfUsTitle":"Be one of us",
+    "guideVesselsTitle":" guide vessels to us",
+    "joinFleetTitle":"   Join Our Fleet",
+
+    "orientFleet":" ORIENT FLEET",
+    "careersPar":"ORIENT FLEET company has established its position as a vessel manager at a local and regional level and a provider of marine services. building this confidence is fundamental to what we do by always providing the best, exceeding customer expectations and sharing their values, as we have developed all our strategies to fit with Ethical values social responsibility, innovation and investment of manpowe through a sitinguished staff, to be a leading company in the marine industry.",
+
+
+    "acheiveMore":"It's not the ship so much as the skillful sailing that assures the prosperous voyage",
+    "contactBelow":"We Feel Happy When you contact us ",
+
+    "headOfficeTitle":"",
+    "syria":"",
+    "address":"",
+    "email":"",
+    "mobile":"",
+    "telegram":"",
+    "telephone":"",
+    "fax":"",
+
     "rights": "2022 Orient Fleet | All Rights Reserved"
 }
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

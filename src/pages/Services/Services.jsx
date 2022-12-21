@@ -15,15 +15,22 @@ import { useTranslation } from 'react-i18next';
 
 const Services = ({lang}) => {
 
+  const styles ={
+    fontFamily: lang ==='ar'? 'myFont': '',
+    direction:lang==='ar'?'rtl' :'ltr',
+    
+    
+  
 
+  }
   const [t, i18next]= useTranslation();
   const titleDynamicSpacing= lang==='en'? 10 : 0
   const textDynamicSpacing = lang ==='en'?2: 0
   return (
     <div className='services-container'>
       <div className="services-hero">
-        <div className="services-hero-content">
-          <Typography sx={{color:'white', }} variant='h4' letterSpacing={titleDynamicSpacing}>{t('servicesTitle')}</Typography>
+        <div className="services-hero-content" style={{marginLeft: lang==='ar'?'0':''}}>
+          <Typography style={styles} sx={{color:'white',fontSize:lang==='ar'?'4rem':'2rem', }}  letterSpacing={titleDynamicSpacing}>{t('servicesTitle')}</Typography>
           <Typography sx={{color:'white'}} variant='body2' letterSpacing={textDynamicSpacing} >{t('servicesText')}
           </Typography>
         </div>
@@ -41,42 +48,42 @@ const Services = ({lang}) => {
 
             <a href='#techSupport' style={{textDecoration: 'none'}}>
               <div className="service order1">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>{t('servicesTitle')} </Typography>
+                <Typography style={styles} sx={{color:'white', textAlign:'center'}} variant='h4'>{t('technicalSupport')} </Typography>
               </div>
             </a>
 
             <a href='#shipManagement' style={{textDecoration:'none'}}>
 
               <div className="service order2">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>Full Ship Management</Typography>
+                <Typography style={styles} sx={{color:'white', textAlign:'center'}} variant='h4'>{t('shipManagement')}</Typography>
               </div>
             </a>
 
             <a href='#crewManagement' style={{textDecoration:'none'}}>
 
               <div className="service order3">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>Crew Management</Typography>
+                <Typography style={styles} sx={{color:'white', textAlign:'center'}} variant='h4'>{t('crewManagement')}</Typography>
               </div>
             </a>
 
             <a href='#auditing' style={{textDecoration:'none'}}>
 
               <div className="service order4">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>ISM/ISPS/MLC auditing</Typography>
+                <Typography style={styles} sx={{color:'white', textAlign:'center'}} variant='h4'>{t('ISM')}</Typography>
               </div>
             </a>
             
             <a href='#inspection' style={{textDecoration:'none'}}>
 
               <div className="service order5">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>Pre-Purchase Inspection</Typography>
+                <Typography style={styles} sx={{color:'white', textAlign:'center'}} variant='h4'>{t('prePurchase')}</Typography>
               </div>
             </a>
 
             <a href='#cargoRoutine' style={{textDecoration:'none'}}>
 
               <div className="service order6">
-                <Typography sx={{color:'white', textAlign:'center'}} variant='h4'>Cargo Routine Inspection and Surveys</Typography>
+                <Typography style={styles} sx={{color:'white', textAlign:'center'}} variant='h4'>{t('cargoRoutine')}</Typography>
               </div>
             </a>
           
@@ -85,34 +92,34 @@ const Services = ({lang}) => {
 
       {/* ship Management */}
 
-      <div id='shipManagement' className="ship-management">
-        <Typography textAlign='center' letterSpacing={15} color='#5595D1' variant='h4'>Full Ship Management</Typography>
+      <div id='shipManagement'  className="ship-management">
+        <Typography style={styles}  textAlign='center' letterSpacing={titleDynamicSpacing} color='#5595D1' variant='h4'>{t('shipManagement')}</Typography>
         <div className="management-one">
             <img src={FSM1} alt="alt" className='fsm-img' />
             <ul>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  We manage all technical aspects by the fleet team with high efficiency to include our management.
+                <Typography gutterBottom  style={styles} fontWeight={600} variant='body2'>
+                  {t('fsmHeader')}
                 </Typography>
               </li>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  Monitoring of the vessels through an online tracking system of our management Shipping Services.
+                <Typography gutterBottom  style={styles}  fontWeight={600} variant='body2'>
+                  {t('fsmService1')}
                 </Typography>
               </li>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  Ship's certificate.
+                <Typography gutterBottom  style={styles} fontWeight={600} variant='body2'>
+                {t('fsmService2')}
                 </Typography>
               </li>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  Ship inspection.
+                <Typography gutterBottom  style={styles} fontWeight={600} variant='body2'>
+                {t('fsmService3')}
                 </Typography>
               </li>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  Develop security plans in line with international regulations and standards (ISPS).
+                <Typography gutterBottom  style={styles} fontWeight={600} variant='body2'>
+                {t('fsmService4')}
                 </Typography>
               </li>
             </ul>
@@ -120,13 +127,18 @@ const Services = ({lang}) => {
         <div className="management-two">
             <ul>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  We manage all technical aspects by the fleet team with high efficiency to include our management.
+                <Typography gutterBottom  style={styles} fontWeight={600} variant='body2'>
+                {t('fsmService5')}
                 </Typography>
               </li>
               <li>
-                <Typography fontWeight={600} variant='body2'>
-                  Monitoring of the vessels through an online tracking system of our management Shipping Services.
+                <Typography gutterBottom  style={styles} fontWeight={600} variant='body2'>
+                {t('fsmService6')}
+                </Typography>
+              </li>
+              <li>
+                <Typography style={styles} fontWeight={600} variant='body2'>
+                {t('fsmService7')}
                 </Typography>
               </li>
             </ul>
@@ -137,33 +149,33 @@ const Services = ({lang}) => {
 
       {/* crew Management */}
       <div id='crewManagement' className="crew-management">
-        <Typography padding={4} letterSpacing={15} variant='h4' >Crew Management</Typography>
+        <Typography style={styles} padding={4} letterSpacing={titleDynamicSpacing} variant='h4' >{t('crewManagement')}</Typography>
         <div className="crew-management-container">
           <img src={Crew1} alt="alt" className='crew1-img' />
           <div className="crew-management-content">
-            <Typography letterSpacing={2} color='white' >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat impedit culpa dolores, suscipit quia vitae dicta ipsam veritatis porro accusamus eveniet cupiditate eaque dolorem harum repellendus. Est atque quam a?
+            <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >
+              {t('managementHeader')}
             </Typography  >
-            <ul>
+            <ul style={styles} >
               <li>
-                <Typography letterSpacing={2} color='white' >Assign the appropriate crew to meet the ship's need</Typography>
+                <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >{t('managementService1')}</Typography>
               </li>
               <li>
-                <Typography letterSpacing={2} color='white' >Follow up on regular training on safety procedures according to international standards on board</Typography>
+                <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >{t('managementService2')}</Typography>
               </li>
               <li>
-                <Typography letterSpacing={2} color='white' >
-                  Travel logistics
+                <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >
+                {t('managementService3')}
                 </Typography>
               </li>
               <li>
-                <Typography letterSpacing={2} color='white' >continue the issuance of certificates of conformity for the ship's crew in proportion to the flag it represents</Typography>
+                <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >{t('managementService4')}</Typography>
               </li>
               <li>
-                <Typography letterSpacing={2} color='white' >We are keen to abide by the times of rest and work, and to secure the full equipment of  the crew root and the ship's resturant</Typography>
+                <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >{t('managementService5')}</Typography>
               </li>
               <li>
-                <Typography letterSpacing={2} color='white' >Comliance with all MLC regulations</Typography>
+                <Typography style={styles} letterSpacing={textDynamicSpacing} color='white' >{t('managementService6')}</Typography>
               </li>
               
             </ul>
@@ -177,39 +189,39 @@ const Services = ({lang}) => {
       {/* tech and operational support */}
 
       <div id='techSupport' className="tech-support">
-        <Typography letterSpacing={9} variant='h4' textAlign='center' color='#5595D1' padding={4} >Technical and operational suppport </Typography>
+        <Typography letterSpacing={titleDynamicSpacing} variant='h4' textAlign='center' color='#5595D1' padding={4} >{t('technicalSupport')} </Typography>
         <div className="tech-support-container">
           <img src={Tech1} className='tech1-img' alt="alt" />
           <div className="tech-support-content">
             <div className="tech-support-content-left">
-              <Typography letterSpacing={2} >We provide a wide range of technical services to ship owners:</Typography>
-              <ul>
+              <Typography style={styles} letterSpacing={textDynamicSpacing} >{t('technicalHeader')}</Typography>
+              <ul style={styles}>
                 <li>
-                  <Typography letterSpacing={2} >Dealing with shipyards, evaluating specifications, obtaining approvals and conceptual design</Typography>
+                  <Typography style={styles}  letterSpacing={textDynamicSpacing} >{t('technicalService1')}</Typography>
                 </li>
                 <li>
-                  <Typography letterSpacing={2} >
-                    Environmental sustainability solutions
+                  <Typography style={styles}  letterSpacing={textDynamicSpacing} >
+                  {t('technicalService2')}
                   </Typography>
                 </li>
                 <li>
-                  <Typography letterSpacing={2} >
-                    Dry docking support
+                  <Typography style={styles}  letterSpacing={textDynamicSpacing} >
+                  {t('technicalService3')}
                   </Typography>
                 </li>
                 <li>
-                  <Typography  >
-                    Risk management
+                  <Typography style={styles}  letterSpacing={textDynamicSpacing}  >
+                  {t('technicalService4')}
                   </Typography>
                 </li>
                 <li>
-                  <Typography letterSpacing={2} >
-                    Ship structural assessments
+                  <Typography style={styles}  letterSpacing={textDynamicSpacing} >
+                  {t('technicalService5')}
                   </Typography>
                 </li>
                 <li>
-                  <Typography letterSpacing={2} > 
-                    Life extention program
+                  <Typography style={styles}  letterSpacing={textDynamicSpacing} > 
+                  {t('technicalService6')}
                   </Typography>
                 </li>
               </ul>
@@ -226,11 +238,11 @@ const Services = ({lang}) => {
       {/* ISM/ISPS/MLC Auditing */}
 
       <div id='auditing' className="auditing">
-        <Typography padding={4} color='white' variant='h4' letterSpacing={9} textAlign='center'>ISM/ISPS/MLC Auditing</Typography>
+        <Typography style={styles} padding={4} color='white' variant='h4' letterSpacing={titleDynamicSpacing} textAlign='center'>{t('ISM')}</Typography>
         <div className="auditing-container">
           <div className="auditing-content">
               <img src={ISM2} alt="" className='ism1-img' />
-              <Typography letterSpacing={2} color='white'>We provide a well-trained, fully prepared and vastly experienced DPA to ensure the implementation of a Safety Management System and verify and monitor all safety and pollution prevention activities. We guarantee each ship to be manned, equipped and maintained, tasks to be delegated and that adequate resources are available </Typography>
+              <Typography style={styles} letterSpacing={textDynamicSpacing} color='white'>{t('ismText')} </Typography>
           </div>
           <img src={ISM1} alt="" className='ism2-img' />
         </div>
@@ -238,17 +250,15 @@ const Services = ({lang}) => {
 
       {/* pre purchase inspection */}
       <div id='inspection' className="pre-purchase">
-        <Typography variant='h4' letterSpacing={9} textAlign='center' padding={4}>Pre-Purchase Inspspection</Typography>
+        <Typography style={styles} variant='h4' letterSpacing={titleDynamicSpacing} textAlign='center' padding={4}>{t('prePurchase')}</Typography>
         <div className="pre-purchase-container">
             <img src={Pre} alt="" className='pre-img' />
             <div className="pre-purchase-content">
-                <Typography letterSpacing={2}>
-                  orem ipsum dolor, sit amet consectetur adipisicing elit. Nulla quia maiores nostrum qui, quam nihil molestiae nisi sunt eligendi nobis asperiores eius quibusdam fugiat laborum, molestias voluptates reiciendis neque distinctio repudiandae. Sint architecto molestias fugit aspernatur cumque temporibus nobis impedit deleniti ex inventore, omnis illum eveniet corporis eos iusto aliquid.
+                <Typography style={styles} letterSpacing={textDynamicSpacing}>
+                  {t('preParagraph')}
 
                 </Typography>
-                <Typography letterSpacing={2}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eveniet cumque consequuntur, corporis vel expedita nisi quam ad, dicta impedit id minus perspiciatis adipisci voluptate. Neque quis officiis quae qui quia suscipit fugit mollitia error magni cum! Quibusdam natus aliquam dolore expedita, impedit dolores tempora consequuntur, optio quo aperiam ut!
-                  </Typography>
+               
             </div>
         </div>
       </div>
@@ -256,17 +266,14 @@ const Services = ({lang}) => {
 
       {/* Cargo Routine Inspection */}
       <div id='#cargoRoutine' className="cargo-routine">
-        <Typography color='#5595D1' variant='h4' textAlign='center' padding={4} letterSpacing={9}>Cargo Routine Inspection</Typography>
+        <Typography style={styles} color='#5595D1' variant='h4' textAlign='center' padding={4} letterSpacing={titleDynamicSpacing}>{t('cargoRoutine')}</Typography>
         <div className="cargo-routine-content">
           <img src={Cargo} alt="" />
-          <Typography variant='body1' letterSpacing={2}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi excepturi, possimus quasi nesciunt deleniti aut nam ullam aliquid numquam inventore mollitia harum error minus eos ab accusantium sequi sunt voluptatum!
+          <Typography style={styles} variant='body1' letterSpacing={textDynamicSpacing}>
+            {t('cargoParagraph')}
             
           </Typography>
-          <Typography letterSpacing={2} variant='body1'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sunt tenetur harum dolore culpa error incidunt! Amet modi obcaecati voluptatibus.
-
-          </Typography>
+          
         </div>
       </div>
     </div>

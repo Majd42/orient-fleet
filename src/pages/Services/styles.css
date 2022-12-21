@@ -78,11 +78,11 @@
 }
 
 .ship-management{
-    height: 760px;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 1rem;
+    padding: 2rem 0;
 }
 
 .management-one{
@@ -97,6 +97,7 @@
 
 .management-one ul {
    line-height: 40px;
+   list-style-type: none;
 }
 
 .fsm-img{
@@ -116,6 +117,7 @@
 
 .management-two ul {
     line-height: 40px;
+    list-style-type: none;
  }
 
 
@@ -208,7 +210,8 @@
 
 .auditing {
     background-color: #5595D1;
-    height: 691px;
+    height: 100%;
+    padding:1.5rem 0
 }
 
 .auditing-container {

@@ -5,8 +5,19 @@ import IMG2 from '../../assets/Careers/2.jpg'
 import IMG3 from '../../assets/Careers/3.jpg'
 import { Link } from 'react-router-dom'
 import './styles.css'
+import { useTranslation } from 'react-i18next';
+const CareersMain = ({lang}) => {
 
-const CareersMain = () => {
+    const styles ={
+        fontFamily: lang ==='ar'? 'myFont': '',
+        direction:lang==='ar'?'rtl' :'ltr',
+        
+        
+    
+      }
+      const [t, i18next] = useTranslation()
+      const dynamicSpacing = lang === 'ar' ? 1 : 15
+      const TextDynamicSpacing = lang === 'ar' ? 0 : 2
   return (
     <div className='careers-main'>
         <div className="careers-main-content">
@@ -20,7 +31,7 @@ const CareersMain = () => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography textAlign='center' variant='h4' >Be one of us</Typography>
+                        <Typography style={styles} textAlign='center' variant='h4' >{t('onOfUsTitle')}</Typography>
                     </CardContent>
                 </Card>
             </Link>
@@ -35,7 +46,7 @@ const CareersMain = () => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography textAlign='center' variant='h4' >Guide Vessels to Us</Typography>
+                        <Typography style={styles} textAlign='center' variant='h4' > {t('guideVesselsTitle')} </Typography>
                     </CardContent>
                 </Card>
             </Link>
@@ -50,7 +61,7 @@ const CareersMain = () => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography textAlign='center' variant='h4' >Join our Fleet</Typography>
+                        <Typography style={styles} textAlign='center' variant='h4' >{t('joinFleetTitle')}</Typography>
                     </CardContent>
                 </Card>
             </Link>

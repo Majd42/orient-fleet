@@ -37,9 +37,9 @@ function App() {
           <Route path="/" element={<Home lang={lang} />} />
           <Route path={t('page1')} element={<About lang={lang} />} />
           <Route path={t('page2')}  element={<Services lang={lang} />} />
-          <Route path={t('page3')}  element={<Investments />} />
-          <Route path={t('page4')}  element={<Careers />} />
-          <Route path={t('page5')}  element={<Contact />} />
+          <Route path={t('page3')}  element={<Investments lang={lang} />} />
+          <Route path={t('page4')}  element={<Careers lang={lang}/>} />
+          <Route path={t('page5')}  element={<Contact lang={lang} />} />
           <Route path={t('page6')}  element={<Media />} />
           <Route path="/captain" element={<Captain />} />
           <Route path="/status" element={<Status />} />

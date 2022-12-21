@@ -13,6 +13,7 @@ const Home = ({lang}) => {
     fontFamily: lang ==='ar'? 'myFont': '',
     direction:lang==='ar'?'rtl' :'ltr',
     
+    
 
   }
   const [t, i18next] = useTranslation()

@@ -3,25 +3,40 @@ import React from 'react'
 import HeadOffice from '../../components/HeadOffice/HeadOffice'
 import WeAreIn from '../../components/WeAreIn/WeAreIn'
 import './styles.css'
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import { useTranslation } from 'react-i18next';
 
-const Contact = () => {
+const Contact = ({lang}) => {
+
+  const styles ={
+    fontFamily: lang ==='ar'? 'myFont': '',
+    direction:lang==='ar'?'rtl' :'ltr',
+    
+    
+  
+
+  }
+  const [t, i18next]= useTranslation();
+  const titleDynamicSpacing= lang==='en'? 10 : 0
+  const textDynamicSpacing = lang ==='en'?2: 0
   return (
-    <div>
+    <div id='contact'>
       <div className="contact-img-container">
         <div className="contact-img-content">
-          <Typography gutterBottom letterSpacing={3} variant='h4' >Contact us</Typography>
-          <Typography variant='body2' letterSpacing={3}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, debitis natus.c.careers-main-content.careers-main-content quo, reprehenderit sint mollitia non dolorum illum maiores doloribus excepturi explicabo tenetur quidem?</Typography>
+          <Typography style={styles} gutterBottom letterSpacing={titleDynamicSpacing} variant='h4' >{t('contactTitle')}</Typography>
+          <Typography style={styles} variant='body1' letterSpacing={textDynamicSpacing}>{t('contactBelow')}</Typography>
         </div>
       </div>
-      <HeadOffice />
+      <HeadOffice lang={lang} />
       <WeAreIn />
-      <div className='contact-paragraph'>
-        <Typography maxWidth='60%' letterSpacing={2} variant='body2'>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reprehenderit! Cum aliquam distinctio adipisci reiciendis iure modi possimus voluptate incidunt!
-          
-        </Typography>
-
-      </div>
+      <div className="scroll-top">
+          <Typography sx={{color:'black', maxWidth:'60%'}} variant='h6'>
+          {t('beforeScorllText')}
+          </Typography>
+          <a href='#contact' className='back-to-top'>
+            <ArrowCircleUpIcon sx={{fontSize:60}} />
+          </a>
+        </div>
     </div>
   )
 }
