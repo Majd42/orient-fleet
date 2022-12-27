@@ -16,7 +16,7 @@ const AvailableInvestments = ({lang}) => {
       }
       const [t, i18next] = useTranslation()
       const dynamicSpacing = lang === 'ar' ? 1 : 15
-      const TextDynamicSpacing = lang === 'ar' ? 0 : 2
+      const textDynamicSpacing = lang === 'ar' ? 0 : 2
 
     const handleOpenMore = () => {
         setOpenMoreInfo(true)
@@ -30,27 +30,30 @@ const AvailableInvestments = ({lang}) => {
     const investments = [
         {
             id: 1,
-            name: 'Investment Name',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque omnis facilis accusantium, eum officia vero quos ad rem! Sit, maxime sunt provident autem cum mollitia? Praesentium autem quod accusantium!'
+            name: lang ==='en'? 'Investment Name':'اسم الاستثمار',
+            content:lang ==='en'? 'Coming Soon ...':'قريبا',
+            
         },
         {
             id: 2,
-            name: 'Investment Name',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque omnis facilis accusantium, eum officia vero quos ad rem! Sit, maxime sunt provident autem cum mollitia? Praesentium autem quod accusantium!'
+            name: lang ==='en'? 'Investment Name':'اسم الاستثمار',
+            content:lang ==='en'? 'Coming Soon ...':'قريبا',
+            
         },
         {
             id: 3,
-            name: 'Investment Name',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque omnis facilis accusantium, eum officia vero quos ad rem! Sit, maxime sunt provident autem cum mollitia? Praesentium autem quod accusantium!'
+            name: lang ==='en'? 'Investment Name':'اسم الاستثمار',
+            content:lang ==='en'? 'Coming Soon ...':'قريبا',
+            
         },
     ]
     
   return (
     <div className='available-invesmtents'>
-        <Typography letterSpacing={2} padding={4} variant='h4' color='#5595D1' textAlign='center'>{t('availableInvs')}</Typography>
+        <Typography style={styles} letterSpacing={dynamicSpacing} padding={4} variant='h4' color='#5595D1' textAlign='center'>{t('availableInvs')}</Typography>
         <div className="investments-content">
             {investments.map(investment=> (
-                <Card sx={{maxWidth: 385}}>
+                <Card sx={{width: 385}}>
                 <CardMedia 
                     component='img'
                     height={190}
@@ -58,8 +61,8 @@ const AvailableInvestments = ({lang}) => {
                     alt='alt'
                     />
                 <CardContent>
-                    <Typography letterSpacing={2} gutterBottom component='div' variant='h5'>{investment.name}</Typography>
-                    <Typography letterSpacing={2}>{investment.content}</Typography>
+                    <Typography style={styles} letterSpacing={textDynamicSpacing} gutterBottom component='div' variant='h5'>{investment.name}</Typography>
+                    <Typography style={styles} letterSpacing={textDynamicSpacing}>{investment.content}</Typography>
                 </CardContent>
 
                 <CardActions sx={{display:'flex', justifyContent:'center'}}>

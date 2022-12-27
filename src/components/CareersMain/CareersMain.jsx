@@ -23,7 +23,7 @@ const CareersMain = ({lang}) => {
         <div className="careers-main-content">
             <Link to='/beoneofus' style={{textDecoration:'none'}}>
 
-                <Card sx={{maxWidth: 345}}>
+                <Card sx={{maxWidth: 345}} className='career-card'>
                     <CardMedia 
                         component='img'
                         height={290}
@@ -31,14 +31,14 @@ const CareersMain = ({lang}) => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography style={styles} textAlign='center' variant='h4' >{t('onOfUsTitle')}</Typography>
+                        <Typography style={styles} textAlign='center' variant='h5' >{t('onOfUsTitle')}</Typography>
                     </CardContent>
                 </Card>
             </Link>
 
             <Link to='/guidvessels' style={{textDecoration:'none'}}>
 
-                <Card sx={{maxWidth: 345}}>
+                <Card sx={{maxWidth: 345}} className='career-card'>
                     <CardMedia 
                         component='img'
                         height={290}
@@ -46,14 +46,14 @@ const CareersMain = ({lang}) => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography style={styles} textAlign='center' variant='h4' > {t('guideVesselsTitle')} </Typography>
+                        <Typography style={styles} textAlign='center' variant='h5' > {t('guideVesselsTitle')} </Typography>
                     </CardContent>
                 </Card>
             </Link>
 
             <Link to='/joinourfleet' style={{textDecoration:'none'}}>
 
-                <Card sx={{maxWidth: 345}}>
+                <Card sx={{maxWidth: 345}} className='career-card'>
                     <CardMedia 
                         component='img'
                         height={290}
@@ -61,7 +61,7 @@ const CareersMain = ({lang}) => {
                         className='cmain-img'
                     />
                     <CardContent>
-                        <Typography style={styles} textAlign='center' variant='h4' >{t('joinFleetTitle')}</Typography>
+                        <Typography style={styles} textAlign='center' variant='h5' >{t('joinFleetTitle')}</Typography>
                     </CardContent>
                 </Card>
             </Link>

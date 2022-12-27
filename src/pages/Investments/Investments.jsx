@@ -3,7 +3,7 @@ import React from 'react'
 import './styles.css'
 import AvailableInvestments from '../../components/AvailableInvestments/AvailableInvestments'
 import InvestmentOpportunities from '../../components/InvestmentOpportunities/InvestmentOpportunities'
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import { useTranslation } from 'react-i18next';
 
 const Investments = ({lang}) => {
@@ -23,16 +23,16 @@ const Investments = ({lang}) => {
     <div className='investments-container' id='InvFirstSection'>
       <AvailableInvestments lang={lang} id='InvFirstSection'/>
       <Box  sx={{display:'flex', justifyContent:'center'}}>
-        <Typography padding={4} textAlign='center' width='70%' variant='h5' letterSpacing={2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium id impedit libero dolore. Minus fugit eum nobis rem modi!</Typography>
+        <Typography padding={4} textAlign='center' width='70%' variant='h5' letterSpacing={2}> </Typography>
         
       </Box>
-      <InvestmentOpportunities />
+      <InvestmentOpportunities lang={lang} />
       <div className="scroll-top">
-          <Typography sx={{color:'black', maxWidth:'60%'}} variant='h6'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, aut nam corrupti dolorem quia eligendi.
+      <Typography sx={{color:'black', maxWidth:'60%'}} variant='h6'>
+          {t('beforeScorllText')}
           </Typography>
-          <a href='#InvFirstSection' className='back-to-top'>
-            <ArrowCircleUpIcon sx={{fontSize:40}} />
+          <a href='#firstSection' className='back-to-top'>
+            <KeyboardDoubleArrowUpIcon sx={{fontSize:50}} />
           </a>
         </div>
     </div>

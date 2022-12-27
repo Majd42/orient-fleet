@@ -234,6 +234,7 @@
     flex-direction: column;
     gap: 1rem;
     position: relative;
+    
 }
 
 
@@ -253,9 +254,17 @@
 
 .back-to-top {
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: all .5s ease-in-out;   
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+    border-radius: 1rem;
+    background-color: rgba(90, 151, 208, 1);;
    
     
+}
+
+.back-to-top:hover{
+    transform: translateY(-13%)
 }
 
 

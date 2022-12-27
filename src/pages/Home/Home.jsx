@@ -3,9 +3,8 @@ import React from 'react'
 import './styles.css'
 import { Link } from 'react-router-dom'
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import { useTranslation } from 'react-i18next';
-
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 const Home = ({lang}) => {
 
 
@@ -16,7 +15,7 @@ const Home = ({lang}) => {
     
 
   }
-  const [t, i18next] = useTranslation()
+  const [t] = useTranslation()
   const dynamicSpacing = lang === 'ar' ? 1 : 15
   const TextDynamicSpacing = lang === 'ar' ? 0 : 2
   return (
@@ -108,7 +107,7 @@ const Home = ({lang}) => {
           {t('beforeScorllText')}
           </Typography>
           <a href='#firstSection' className='back-to-top'>
-            <ArrowCircleUpIcon sx={{fontSize:60}} />
+            <KeyboardDoubleArrowUpIcon sx={{fontSize:50}} />
           </a>
         </div>
     </div>

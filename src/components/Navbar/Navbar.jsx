@@ -8,17 +8,50 @@ import NativeSelect from '@mui/material/NativeSelect';
 import './styles.css'
 import { useTranslation } from 'react-i18next';
 
-const Navbar = ({loggedin, setOpenLogin, setLang}) => {
+const Navbar = ({loggedin, setOpenLogin, setLang ,lang}) => {
 
   // const pages = ['About', 'Services', 'Investments', 'Careers', 'Contact', 'Media',]
   
   const [anchor, setAnchor]= useState(null)
   const [userAnchor, setUserAnchor] = useState(null)
   const [t, i18next] = useTranslation()
-  
+  const styles ={
+    fontFamily: lang ==='ar'? 'myFont': '',
+    direction:lang==='ar'?'rtl' :'ltr',
+    
+    
+
+  }
 
 
-  const pages = [t('page1'), t('page2'), t('page3'), t('page4'), t('page5'), t('page6')]
+  const pages = [
+    {
+      pageRoute: '/about',
+      pageTitle:lang ==='en'?'about':'من نحن'
+    },
+    {
+      pageRoute: '/services',
+      pageTitle:lang ==='en'?'Services':'الخدمات'
+    },
+    
+    {
+      pageRoute: '/investments',
+      pageTitle:lang ==='en'?'Investments':'الاستثمارات'
+    },
+    {
+      pageRoute: '/careers',
+      pageTitle:lang ==='en'?'Careers':' المسارات المهنية'
+    },
+    {
+      pageRoute: '/contact',
+      pageTitle:lang ==='en'?'Contact':' تواصل معنا'
+    },
+    {
+      pageRoute: '/media',
+      pageTitle:lang ==='en'?'Media':'الوسائط'
+    },
+
+  ]
 
 
   const handleOpenMenu =(e) => {
@@ -69,15 +102,15 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
                anchorEl={anchor}
                >
                 {pages.map((page) => (
-                  <Link to={page} style={{textDecoration:'none'}}>
-                    <MenuItem onClick={handleCloseMenu} key={page}>
-                      <Typography>{page}</Typography>
+                  <Link to={page.pageRoute} style={{textDecoration:'none'}}>
+                    <MenuItem onClick={handleCloseMenu} >
+                      <Typography style={styles} >{page.pageTitle}</Typography>
                     </MenuItem>
                   </Link>
                 ))}
                 <Divider />
                 {!loggedin && <MenuItem onClick={handleOpenLogin} className='login-btn' >
-                  <Typography >{t('pageLogin')}</Typography>
+                  <Typography style={styles} >{t('pageLogin')}</Typography>
                 </MenuItem>}
               </Menu>
             </Box>
@@ -85,9 +118,9 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
           <Box sx={{display: { xs: 'none', md: 'block' }}}>
               
               {pages.map(page => (
-                <Link key={page} to={page} >
-                  <button className='nav-link'>
-                    {page}
+                <Link to={page.pageRoute} >
+                  <button style={styles} className='nav-link'>
+                    {page.pageTitle}
                   </button>
                 </Link>
               ))}
@@ -169,7 +202,7 @@ const Navbar = ({loggedin, setOpenLogin, setLang}) => {
                 >
               
                 <MenuItem  onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">Sign out</Typography>
+                  <Typography  style={styles} textAlign="center">Sign out</Typography>
                 </MenuItem>
              
               </Menu>

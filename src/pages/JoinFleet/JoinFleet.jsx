@@ -1,65 +1,83 @@
 import { Button, Typography, } from '@mui/material'
 import React from 'react'
 import './styles.css'
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import { useTranslation } from 'react-i18next';
 
 
-const BeOneOfUs = () => {
+const BeOneOfUs = ({lang}) => {
+
+    const styles ={
+        fontFamily: lang ==='ar'? 'myFont': '',
+        
+        
+        
+    
+      }
+      const [t] = useTranslation()
+      const dynamicSpacing = lang === 'ar' ? 1 : 15
+      const TextDynamicSpacing = lang === 'ar' ? 0 : 2
   return (
-    <div>
+    <div id='joinFleet'>
         <div className="join-img-container">
             <div className="join-img-content">
 
-                <Typography color='white' variant='h3' letterSpacing={2}>Join Our Fleet</Typography>
-                <Typography
-                varinat='body1' color='white' letterSpacing={2}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit asperiores animi molestiae nisi voluptatum dolores? Voluptas, accusantium. Accusamus, illum voluptate.
+                <Typography style={styles} color='white' variant='h3' letterSpacing={2}>{t('joinFleetTitle')}</Typography>
+                <Typography style={styles} 
+                varinat='body1' color='white' letterSpacing={2}>{t('joinFleetText')}
                 </Typography>
             </div>
         </div>
         <Typography padding={2} variant='h5' textAlign='center'>Please Provide Your Information Below ...</Typography>
         <form className='contact-form' action="">
             <div className="contact-info">
-                <Typography letterSpacing={2} variant='h5'>Contact Info</Typography>
+                <Typography  style={styles} letterSpacing={TextDynamicSpacing} variant='h5'>{t('contactInfo')}</Typography>
                 <div className="form-control">
-                    <label>First Name</label>
-                    <input className='contact-input' type='text' name='fname' placeholder='FirstName' required/>
+                    <label>{t('fname')}</label>
+                    <input className='contact-input' type='text' name='fname'required/>
                 </div>
                 <div className="form-control">
-                    <label>Last Name</label>
+                    <label>{t('lname')}</label>
                     <input className='contact-input' type='text' name='lname'  required/>
                 </div>
                 <div className="form-control">
-                    <label>Email</label>
+                    <label>{t('mail')}</label>
                     <input className='contact-input' type='email' name='email'  required/>
                 </div>
                 <div className="form-control">
-                    <label>Mobile</label>
+                    <label>{t('Mobile')}</label>
                     <input className='contact-input' type='text' name='mobile'  />
                 </div>
             </div>
             <div className="employment-details">
-                <Typography letterSpacing={2} variant='h5'>Employment Details</Typography>
+                <Typography style={styles} letterSpacing={TextDynamicSpacing } variant='h5'>{t('empDetails')}</Typography>
                 <div className="employment-info">
                     <div className="form-control">
-                        <label>Availability</label>
+                        <label style={{ fontSize:"1.4rem"}}>{t('availability')}</label>
                         <input className='contact-input' type='text' name='availability'  required/>
                     </div>
                     <div className="atachment-info">
-                        <Typography letterSpacing={2} gutterBottom variant='h5' color='white'>Atachment Information</Typography>
-                        <input className='upload' type='file' required />
+                        <Typography style={styles} letterSpacing={TextDynamicSpacing} gutterBottom variant='h5' color='white'>{t('atachInfo')}</Typography>
+                        <label className='file-upload'>
+                            {t('browse')}
+                            <input type='file' />
+                        </label>
                     </div>
                 </div>
 
-                <button className='submit-btn' type='submit'>Submit</button>
+                <button className='submit-btn' type='submit'>{t('submit')}</button>
             </div>
 
             
         </form>
 
-        <div className="paragraph">
-            <Typography letterSpacing={2} variant='body1' textAlign='center' sx={{width:'50%'}}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit at dolorem molestias hic quos voluptatem ipsum, vitae, a amet, officiis repudiandae? Fugiat, maxime rerum.
-
-            </Typography>
+        <div className="scroll-top">
+          <Typography sx={{color:'black', maxWidth:'60%'}} variant='h6'>
+          {t('beforeScorllText')}
+          </Typography>
+          <a href='#joinFleet' className='back-to-top'>
+            <KeyboardDoubleArrowUpIcon sx={{fontSize:50}} />
+          </a>
         </div>
     </div>
   )

@@ -31,21 +31,21 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar  setLang={setLang} loggedin={loggedin} setOpenLogin={setOpenLogin} />
+        <Navbar lang={lang}  setLang={setLang} loggedin={loggedin} setOpenLogin={setOpenLogin} />
         {openLogin && <Login setLoggedin={setLoggedin} setOpenLogin={setOpenLogin} />}
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
-          <Route path={t('page1')} element={<About lang={lang} />} />
-          <Route path={t('page2')}  element={<Services lang={lang} />} />
-          <Route path={t('page3')}  element={<Investments lang={lang} />} />
-          <Route path={t('page4')}  element={<Careers lang={lang}/>} />
-          <Route path={t('page5')}  element={<Contact lang={lang} />} />
-          <Route path={t('page6')}  element={<Media />} />
-          <Route path="/captain" element={<Captain />} />
-          <Route path="/status" element={<Status />} />
-          <Route path="/beoneofus" element={<BeOneOfUs />} />
-          <Route path="/guidvessels" element={<GuidVessels />} />
-          <Route path="/joinourfleet" element={<JoinFleet />} />
+          <Route path={'/about'} element={<About lang={lang} />} />
+          <Route path={'/services'}  element={<Services lang={lang} />} />
+          <Route path={'/investments'}  element={<Investments lang={lang} />} />
+          <Route path={'/careers'}  element={<Careers lang={lang}/>} />
+          <Route path={'/contact'}  element={<Contact lang={lang} />} />
+          <Route path={'/media'}  element={<Media lang={lang}/>} />
+          <Route path="/captain" element={<Captain lang={lang} />} />
+          <Route path="/status" element={<Status lang={lang} />} />
+          <Route path="/beoneofus" element={<BeOneOfUs lang={lang} />} />
+          <Route path="/guidvessels" element={<GuidVessels lang={lang} />} />
+          <Route path="/joinourfleet" element={<JoinFleet lang={lang} />} />
 
 
           

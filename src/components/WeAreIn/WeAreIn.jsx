@@ -9,7 +9,21 @@ import './styles.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-const WeAreIn =() => {
+import { useTranslation } from 'react-i18next';
+const WeAreIn =({lang}) => {
+
+    const styles ={
+        fontFamily: lang ==='ar'? 'myFont': '',
+        direction:lang==='ar'?'rtl' :'ltr',
+        
+        
+      
+    
+      }
+      const [t]= useTranslation();
+      const titleDynamicSpacing= lang==='en'? 10 : 0
+      const textDynamicSpacing = lang ==='en'?2: 0
+      
 
     const  settings = {
         dots: true,
@@ -48,8 +62,8 @@ const WeAreIn =() => {
 
     return(
         <div style={{}}>
-            <Typography textAlign='center' color='#5595D1' gutterBottom  variant='h4' letterSpacing={4}>
-                We Are In
+            <Typography style={styles} textAlign='center' color='#5595D1' gutterBottom  variant='h4' letterSpacing={titleDynamicSpacing}>
+                {t('weAreIn')}
             </Typography>
             {/* <div className="countries">
                 <div className="country">
@@ -77,24 +91,24 @@ const WeAreIn =() => {
             <Slider {...settings} className='countries'  >
                 <div className="country">
                     <img className='fix-flag' src={Turkey} alt=""/>
-                    <Typography  color='white' variant='h5' letterSpacing={2} >Turkey</Typography>
+                    <Typography  style={styles}  color='white' variant='h5' letterSpacing={textDynamicSpacing} >{t('Turkey')}</Typography>
                 </div>
                 <div className="country">
                     <img src={Panama} alt=""/>
-                    <Typography color='white' variant='h5' letterSpacing={2} >Panama</Typography>
+                    <Typography style={styles}  color='white' variant='h5' letterSpacing={textDynamicSpacing} >{t('Panama')}</Typography>
                 </div>
                 <div className="country">
                     <img className='fix-flag' src={UAE} alt=""/>
-                    <Typography  color='white' variant='h5' letterSpacing={2} >UAE</Typography>
+                    <Typography style={styles}  color='white' variant='h5' letterSpacing={textDynamicSpacing} > {t('UAE')} </Typography>
                 </div>
                 <div className="country">
                     <img src={UK} alt=""/>
-                    <Typography      color='white' variant='h5' letterSpacing={2} >UK</Typography>
+                    <Typography   style={styles}   color='white' variant='h5' letterSpacing={textDynamicSpacing} > {t('UK')} </Typography>
                 </div>
                 <div className="country">
                     <img src={Lebanon} alt=""/>
-                    <Typography color='white' variant='h5' letterSpacing={2} >Lebanon</Typography>
-                </div>
+                    <Typography style={styles} color='white' variant='h5' letterSpacing={textDynamicSpacing} > {t('Lebanon')} </Typography>
+                </div> 
             </Slider>
             
 

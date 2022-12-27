@@ -108,6 +108,9 @@
     "ismText":"Our auditors are qualified by the most reputable Ship Register We provide internal audit services for Ship and/or Offshore Management Companies / Owners. We have qualified lead auditors for ISM, ISPS and MLC who will follow the required code and your management procedures to minimize your expert employment charges as well as you're travelling expenses. Our auditors are the same who are carrying out audit ships during the Flag Inspections or audits for the most reputable convenience flag so you will have this advantage with respects to others you could hire or even using your own employers. Our auditors are qualified by the most reputable Ship Registers or Class so the quality of the audit is granted",
 
 
+    "availableInvs":"Available Investments",
+    "invOppertunities":"Investment oppertunities",
+
     "onOfUsTitle":"Be one of us",
     "guideVesselsTitle":" guide vessels to us",
     "joinFleetTitle":"   Join Our Fleet",
@@ -117,16 +120,49 @@
 
 
     "acheiveMore":"It's not the ship so much as the skillful sailing that assures the prosperous voyage",
-    "contactBelow":"We Feel Happy When you contact us ",
+    "contactBelow":"we are more than happy to hear from you whether it be for services requests or suggestions.",
 
-    "headOfficeTitle":"",
-    "syria":"",
-    "address":"",
-    "email":"",
-    "mobile":"",
-    "telegram":"",
-    "telephone":"",
-    "fax":"",
+    "headOfficeTitle":"Head Office",
+    "location":" P.o.Box-667 location: Latakia Baghdad street.",
+    "syria":"Syria",
+    "address":"Address",
+    "email":"Email",
+    "mobile":"Mobile",
+    "telegram":"Telegram",
+    "telephone":"Telephone",
+    "fax":"Fax",
+
+    "weAreIn":"We Are In",
+    "Turkey":"Turkey",
+    "Lebanon":"Lebanon",
+    "UAE":"UAE",
+    "UK":"UK",
+    "Panama":"Panama",
+
+
+    
+    "guideVesselsText":"Looking for a job at sea? We are always looking for talented employees! give your maritime career a boost with us.We offer various ashore positions in Ship Management, Crewing, Operations and Chartering and others that are waiting for you.",
+
+    "submit":"Submit",
+    "browse":"Browse",
+    "provideInfo":"Please Provide Your Information Below ...",
+    "contactInfo":"Contact Information",
+    "fname":"First Name",
+    "lname":"Last Name",
+    "mail":"Email",
+    "availability":"Availability",
+    "Mobile":"Mobile",
+    "empDetails": "Employment Details ",
+    "atachInfo":"Atachment Information",
+
+
+
+    "beOneOfUsTitle":"Be One Of Us",
+    "beOneOfUsText":"Looking for a job at sea? We are always looking for talented employees! give your maritime career a boost with us. We offer various ashore positions in Ship Management, Crewing, Operations and Chartering and others that are waiting for you.",
+    
+
+    "joinFleetText":"There is a growing demand for qualified personnel to operate and maintain vessels, we are always looking for skilled onboard crew in all departments. If you think you have what it takes, don’t hesitate to call us!",
+
 
     "rights": "2022 Orient Fleet | All Rights Reserved"
 }

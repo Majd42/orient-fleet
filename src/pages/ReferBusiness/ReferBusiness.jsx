@@ -45,7 +45,10 @@ const BeOneOfUs = () => {
                     </div>
                     <div className="atachment-info">
                         <Typography letterSpacing={2} gutterBottom variant='h5' color='white'>Atachment Information</Typography>
-                        <input className='upload' type='file' required />
+                        <label className='file-upload'>
+                            Browse
+                            <input type='file' />
+                        </label>
                     </div>
                 </div>
 
