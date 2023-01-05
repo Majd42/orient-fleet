@@ -108,6 +108,12 @@
     "ismText":"Our auditors are qualified by the most reputable Ship Register We provide internal audit services for Ship and/or Offshore Management Companies / Owners. We have qualified lead auditors for ISM, ISPS and MLC who will follow the required code and your management procedures to minimize your expert employment charges as well as you're travelling expenses. Our auditors are the same who are carrying out audit ships during the Flag Inspections or audits for the most reputable convenience flag so you will have this advantage with respects to others you could hire or even using your own employers. Our auditors are qualified by the most reputable Ship Registers or Class so the quality of the audit is granted",
 
 
+    
+    "preParagraph":"Pre-purchase Inspections are used by Shipbrokers, Shipowners, Banks, and Financiers to gain a full insight into the vessel’s condition, and to mitigate the significant financial risks when acquiring a vessel. It is best to have an independent professional ship inspection for the Pre-purchase assessment of secondhand Shipping Assets. Our inspectors have Chief Engineer and Technical Superintendent backgrounds and conduct the most efficient yet detailed assessments of the vessel condition. With unbiased assessment and judgment, they help to identify businesses’ exposure to potential risks from the purchase of second-hand vessels",
+
+
+    "cargoParagraph":"We offer all types of cargo routine inspection that save the interest of all contractor’s parties that are engaged in the shipping business that may extend to confirming compliance with shipping laws such as BIMCO. Those services are, but not limited to: Draft Survey, Bunker Survey, On/Off Hire Survey, Cargo Operations Supervision, Warehouses Control, Liquid cargo Control Inspection... etc.",
+
     "availableInvs":"Available Investments",
     "invOppertunities":"Investment oppertunities",
 
@@ -164,12 +170,21 @@
     "joinFleetText":"There is a growing demand for qualified personnel to operate and maintain vessels, we are always looking for skilled onboard crew in all departments. If you think you have what it takes, don’t hesitate to call us!",
 
 
+    "shipSurveys":"As well as offering All Types of Ship Survey",
+
+    "survey1":"All ships must be surveyed and verified by officers of the flag State Administrations or their recognized organizations (ROs)/recognized security organizations (RSOs)/nominated surveyors so that relevant certificates can be issued to establish that the ships are designed, constructed, maintained and managed in compliance with the requirements of IMO Conventions, Codes and other instruments",
+    "survey2":"Insurance & Marine Warranty Survey is the verification, by a marine warranty surveyor, of the requirements of an insurer specified in a Warranty Clause covering a marine operation, to ensure that all necessary precautions are taken to avoid loss.",
+    "survey3":"Condition Loss Prevention Survey is the activity, which is deeply rooted within mankind since the beginning of times. The risk environment in the 21st century is however more complex and involves many different skills. One of them is the risk assessment or condition surveys of ships, frequently on behalf of Protection and Indemnity Associations. The scope of the surveys includes pre-entry, routine, and follow-up as well as suitability for intended purpose. We offer advice on all aspects of transportation, including stowage, lashing, securing, suitability survey of vessels & barges.",   
+
+    "revenu":"Total Quarterly Revenu",
+    "shipReport":"Ship Report",
+    "shipName":"ship Name",
+    "SOA":" Ship SOA Report",
+    "statusReport":"Ship Status Report",
+    "download":"Download",
+
     "rights": "2022 Orient Fleet | All Rights Reserved"
 }
-
-
-
-
 
 
 

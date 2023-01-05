@@ -273,6 +273,33 @@ const Services = ({lang}) => {
             {t('cargoParagraph')}
             
           </Typography>
+          <Typography style={styles}  variant='h5' textAlign='center' padding={2} letterSpacing={textDynamicSpacing}>{t('shipSurveys')}</Typography>
+          <ol>
+            <li> 
+              <Typography style={styles} variant='body1' letterSpacing={textDynamicSpacing} >
+
+                {t('survey1')}  
+              </Typography>
+              
+
+            </li>
+            <li> 
+              <Typography style={styles} variant='body1' letterSpacing={textDynamicSpacing} >
+                
+                {t('survey2')}  
+              </Typography>
+               
+
+            </li>
+            <li> 
+              <Typography style={styles} variant='body1' letterSpacing={textDynamicSpacing} >
+                
+                {t('survey3')}
+              </Typography>
+               
+
+            </li>
+          </ol>
           
         </div>
       </div>

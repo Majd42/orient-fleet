@@ -4,11 +4,11 @@ import ShipReport from '../../components/ShipReport/ShipReport'
 import VesselLocation from '../../components/VesselLocation/VesselLocation'
 import Weather from '../../components/Weather/Weather'
 
-const Status = () => {
+const Status = ({lang}) => {
   return (
     <div>
-        <ShipReport />
-        <VesselLocation />
+        <ShipReport lang={lang} />
+        <VesselLocation lang={lang}/>
         <Weather />
     </div>
   )

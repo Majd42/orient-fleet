@@ -30,7 +30,7 @@ const Home = ({lang}) => {
             <Typography sx={{fontFamily: lang ==='ar' ? 'myFont':'', direction:lang==='ar'?'rtl' :'ltr'}}  letterSpacing={TextDynamicSpacing} textAlign='center' marginTop={4} variant='h6  '>{t('homeMainText')}</Typography>
 
             
-            <Button style={{fontFamily: lang ==='ar' ? 'myFont':'', direction:lang==='ar'?'rtl' :'ltr'}} component={Link} to={t('page2')} sx={{marginTop: '3rem', textAlign:'center', backgroundColor:'#5595D0', borderRadius:'1.2rem'}} variant='contained'>
+            <Button style={{fontFamily: lang ==='ar' ? 'myFont':'', direction:lang==='ar'?'rtl' :'ltr'}} component={Link} to={'/about'} sx={{marginTop: '3rem', textAlign:'center', backgroundColor:'#5595D0', borderRadius:'1.2rem'}} variant='contained'>
               {t('learnMoreText')}
             </Button>
           </div>

@@ -17,9 +17,10 @@ const HeadOffice = ({lang}) => {
   const dynamicSpacing = lang === 'ar' ? 1 : 15
   const TextDynamicSpacing = lang === 'ar' ? 0 : 2
   return (
-    <div style={{paddingBottom: '2rem'}}>
+    <div className='headOffice-container' style={{paddingBottom: '2rem'}}>
         <Typography style={styles} textAlign='center' padding={3} variant='h4' color='#5595D1' letterSpacing={dynamicSpacing}>{t('headOfficeTitle')}</Typography>
         <div className="office-content">
+            <img src={Syria} alt="alt" className='syria-flag' />
             <div className="office-info">
                 <Typography style={styles} variant='h4' color='#5595D1'>{t('syria')}</Typography>
                 <Typography style={styles} fontWeight={'700'} variant='body1'>{t('address')}: {t('location')}</Typography>
@@ -31,7 +32,6 @@ const HeadOffice = ({lang}) => {
                 <Typography style={styles} fontWeight={'700'} variant='body1'> {t('telephone')}: +963 041 2553312</Typography>
                 <Typography style={styles} fontWeight={'700'} variant='body1'>{t('fax')}: +963 041 2553312</Typography>
             </div>
-            <img src={Syria} alt="alt" className='syria-flag' />
         </div>
     </div>
   )

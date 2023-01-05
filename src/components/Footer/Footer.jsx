@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material'
 import React from 'react'
 import logo from '../../assets/logo-footer.png'
+import logoar from '../../assets/footerlogoar.svg'
 import { Link } from 'react-router-dom'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -15,10 +16,47 @@ import './styles.css'
 
 
 
-const Footer = () => {
 
-  const [t, i18next] = useTranslation()
+const Footer = ({lang}) => {
 
+  const [t] = useTranslation()
+
+  const styles ={
+    fontFamily: lang ==='ar'? 'myFont': '',
+    direction:lang==='ar'?'rtl' :'ltr',
+    
+    
+
+  }
+
+  const pages = [
+    {
+      pageRoute: '/about',
+      pageTitle:lang ==='en'?'about':'من نحن'
+    },
+    {
+      pageRoute: '/services',
+      pageTitle:lang ==='en'?'Services':'الخدمات'
+    },
+    
+    {
+      pageRoute: '/investments',
+      pageTitle:lang ==='en'?'Investments':'الاستثمارات'
+    },
+    {
+      pageRoute: '/careers',
+      pageTitle:lang ==='en'?'Careers':' المسارات المهنية'
+    },
+    {
+      pageRoute: '/contact',
+      pageTitle:lang ==='en'?'Contact':' تواصل معنا'
+    },
+    {
+      pageRoute: '/media',
+      pageTitle:lang ==='en'?'Media':'الوسائط'
+    },
+
+  ]
 
   return (
     <footer>
@@ -27,25 +65,32 @@ const Footer = () => {
 
           <div className="footer-links-container">
               <div className="footer-links">
-                <Link to='/' style={{textDecoration: 'none'}}><img className='footer-logo' src={logo} alt="alt"  /></Link>
+              <Link to='/' style={{textDecoration: 'none'}}><img className='footer-logo' src={lang === 'ar' ?logo : logoar} alt="alt"  /></Link>
+                {/* 
                 <Link to={t('page1')} className='footer-link'>
-                  <Typography>{t('page1')}</Typography>
+                  <Typography style={styles}>{t('page1')}</Typography>
                 </Link> 
                 <Link to={t('page2')} className='footer-link'>
-                  <Typography>{t('page2')}</Typography>
+                  <Typography style={styles}>{t('page2')}</Typography>
                 </Link>
                 <Link to={t('page3')} className='footer-link'>
-                  <Typography>{t('page3')}</Typography>
+                  <Typography style={styles}>{t('page3')}</Typography>
                 </Link>
                 <Link to={t('page4')} className='footer-link'>
-                  <Typography>{t('page4')}</Typography>
+                  <Typography style={styles}>{t('page4')}</Typography>
                 </Link>
                 <Link to={t('page5')} className='footer-link'>
-                  <Typography>{t('page5')}</Typography>
+                  <Typography style={styles}>{t('page5')}</Typography>
                 </Link>
                 <Link to={t('page6')} className='footer-link'>
-                  <Typography>{t('page6')}</Typography>
-                </Link>
+                  <Typography styles={styles} > {t('page6')}</Typography>
+                </Link> */}
+
+                {pages.map(page => (
+                  <Link to={page.pageRoute} className='footer-link'>
+                    <Typography style={{fontFamily:lang === 'ar'? 'myFont': 'inherit', direction:lang==='ar'?'rtl' :'ltr',}} > {page.pageTitle} </Typography>
+                  </Link> 
+                ))}
               </div>
           </div>
           <div className="footer-contact-container">

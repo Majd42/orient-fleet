@@ -14,7 +14,14 @@
 }
 
 .syria-flag{
-    width: 50%;
+    width: 35%;
+}
+
+.headOffice-container { 
+    background:  linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 100%),url('../../assets/contactBack.jpg') ;
+    background-size: cover;
+    background-position: 70%;
+    backdrop-filter: blur(2px);
 }
 
 @media screen and (max-width: 670px) {

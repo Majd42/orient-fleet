@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 import './styles.css'
+import LOGOAR from '../../assets/logo-ar.svg'
 import { useTranslation } from 'react-i18next';
 
 const Navbar = ({loggedin, setOpenLogin, setLang ,lang}) => {
@@ -83,7 +84,7 @@ const Navbar = ({loggedin, setOpenLogin, setLang ,lang}) => {
           
         <Toolbar>
           <Box sx={{flexGrow: 1}} component={Link} to='/'>
-            <img className='logo' src={LOGO} alt="logo" />
+            <img className='logo' style={{width: lang==='ar'? '294px' :'244px'}} src={lang==='ar'? LOGOAR : LOGO} alt="logo" />
             
             
           </Box>
@@ -119,9 +120,12 @@ const Navbar = ({loggedin, setOpenLogin, setLang ,lang}) => {
               
               {pages.map(page => (
                 <Link to={page.pageRoute} >
-                  <button style={styles} className='nav-link'>
-                    {page.pageTitle}
-                  </button>
+                  {page.pageRoute !== '/services'? <button style={styles} className='nav-link'>
+                      {page.pageTitle}
+                    </button>: <button style={styles} className='nav-link services-link'>
+                      {page.pageTitle}
+                    </button>}
+                    
                 </Link>
               ))}
                 {/* <Button hiddend sx={{ marginLeft:' 1rem'}}>

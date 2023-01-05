@@ -62,7 +62,7 @@ const WeAreIn =({lang}) => {
 
     return(
         <div style={{}}>
-            <Typography style={styles} textAlign='center' color='#5595D1' gutterBottom  variant='h4' letterSpacing={titleDynamicSpacing}>
+            <Typography style={styles} textAlign='center' color='#5595D1' gutterBottom  variant='h4' letterSpacing={titleDynamicSpacing} sx={{padding: '1rem'}}>
                 {t('weAreIn')}
             </Typography>
             {/* <div className="countries">

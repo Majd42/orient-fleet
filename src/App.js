@@ -50,7 +50,7 @@ function App() {
 
           
         </Routes>
-        <Footer />
+        <Footer lang={lang} />
       </BrowserRouter>
     </>
   );
